@@ -1,0 +1,15 @@
+{
+	"Images": {
+		"fancyCard": {
+			"bg-light": "Image by Milad Fakurian on Unsplash",
+			"bg-dark": "Image by Cat Han on Unsplash"
+		}
+	},
+	"Licences": {
+		"Unsplash": "Unsplash gewährt Ihnen eine unwiderrufliche, nicht-exklusive, weltweite Urheberrechtslizenz, um Fotos von Unsplash kostenlos herunterzuladen, zu kopieren, zu verändern, zu verbreiten, aufzuführen und zu nutzen, auch für kommerzielle Zwecke, ohne Genehmigung oder Nennung des Fotografen oder Unsplash. Diese Lizenz umfasst nicht das Recht, Fotos von Unsplash zu kompilieren, um einen ähnlichen oder konkurrierenden Service zu replizieren.",
+		"Google Fonts": {
+			"Material Icons": "Apache Licence 2.0",
+			"Poppins": "Open Font Licence"
+		}
+	}
+}

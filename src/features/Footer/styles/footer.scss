@@ -1,0 +1,6 @@
+footer {
+  background-color: map-get($dark, "tertiary");
+
+  padding: $base-padding * 4 0;
+  margin-top: $base-margin * 6;
+}

@@ -1,0 +1,19 @@
+{
+	"business": {
+		"se": {
+			"short": "The PSD control unit reduces overvoltages and protects electrical equipment.",
+			"long": "Energizing and re-energizing during an autoreclosing operation of shunt compensated transmission lines cause switching overvoltages on the transmission lines. \nThe PSD control unit reduces overvoltages and protects electrical equipment."
+		},
+		"absolut": {
+			"short": "The ABSOLUT project series is intended to create an automated on-demand transport solution for local public transport.",
+			"long": "The ABSOLUT project series is intended to create an automated on-demand transport solution for local public transport that is networked with conventional scheduled services and thus enables a holistic multimodal transport service."
+		},
+		"bst": {
+			"short": "Smartwatch-based voice assistant for the digitalization of construction processes.",
+			"long": "Smartwatch-based voice assistant for the digitalization of construction processes."
+		}
+	},
+	"nonBusiness": {
+		"general": "Private projects to expand and perfect my skills in the following areas: \nFullstack, Software Architecture, Artificial Intelligence, Security, 3D Graphics and Animations"
+	}
+}

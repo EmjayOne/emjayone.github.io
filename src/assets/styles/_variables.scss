@@ -1,0 +1,38 @@
+// colors
+$neutral100: #000000;
+$neutral90: #141414;
+$neutral80: #292929;
+$neutral70: #3d3d3d;
+$neutral60: #525252;
+$neutral50: #7a7a7a;
+$neutral40: #adadad;
+$neutral30: #c2c2c2;
+$neutral20: #d6d6d6;
+$neutral10: #ebebeb;
+$neutral00: #ffffff;
+$blue: #0034ae;
+$blueHover: #0a54ff;
+$orange: #f56200;
+$orangeHover: #ff9147;
+
+// spacing
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
+
+// borders
+$base-border-width: 1px !default;
+$base-border-radius: 20px !default;
+
+// box-shadow
+$base-box-shadow-dark: 1px 3px 5px rgba(255, 255, 255, 0.2) !default;
+$base-box-shadow-light: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
+
+// font sizes
+$base-font-size: 1rem !default;
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-lg: $base-font-size * 1.5 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;
+
+// component sizes
+$navbar-height: 79px;

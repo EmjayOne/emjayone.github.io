@@ -1,7 +1,7 @@
 <template>
-  <main>
-    <p>Hello, World</p>
-  </main>
+  <Intro />
 </template>
 
-<script setup></script>
+<script setup>
+import Intro from "~/features/Intro/components/Intro.vue";
+</script>
