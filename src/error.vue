@@ -4,6 +4,7 @@
       <div class="container">
         <h2>{{ error.statusCode }}</h2>
         <p>Ooops...</p>
+        <p>{{ error.statusMessage }}</p>
         <button class="mt-3" @click="handleError">Home</button>
       </div>
     </section>

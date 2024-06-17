@@ -31,8 +31,8 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/knowledge" @click="navbarStore.setMobileNavToFalse">
-          Knowledge
+        <NuxtLink to="/experience" @click="navbarStore.setMobileNavToFalse">
+          Experience
         </NuxtLink>
       </li>
     </ul>

@@ -1,0 +1,13 @@
+{
+  "project": {
+    "id": "se-psd04",
+    "title": "Siemens Energy PSD04",
+    "date": "07/2023",
+    "tags": ["Business", "BitCtrl"],
+    "details": {
+      "desc": "Energizing and re-energizing during an autoreclosing operation of shunt compensated transmission lines cause switching overvoltages on the transmission lines. \nThe PSD control unit reduces overvoltages and protects electrical equipment.",
+      "link": "https://www.siemens-energy.com/global/en/home/products-services/product/accessories.html",
+      "order": ["desc", "link"]
+    }
+  }
+}
