@@ -1,35 +1,48 @@
 <template>
   <nav id="mobileNav">
-    <span class="material-symbols-outlined" @click="handleMobileNavToggle">
+    <span
+      v-if="!navbarStore.mobileNav"
+      class="material-symbols-outlined"
+      @click="navbarStore.setMobileNavToTrue"
+    >
       menu
     </span>
-    <ul v-if="mobileNav">
+    <span
+      v-if="navbarStore.mobileNav"
+      class="material-symbols-outlined text-highlight-primary"
+      @click="navbarStore.setMobileNavToFalse"
+    >
+      close
+    </span>
+    <ul v-if="navbarStore.mobileNav">
       <li>
-        <NuxtLink to="/" @click="handleMobileNavToggle">Home</NuxtLink>
+        <NuxtLink to="/" @click="navbarStore.setMobileNavToFalse">
+          Home
+        </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/about" @click="handleMobileNavToggle">About</NuxtLink>
+        <NuxtLink to="/about" @click="navbarStore.setMobileNavToFalse">
+          About
+        </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/projects" @click="handleMobileNavToggle"
-          >Projects</NuxtLink
-        >
+        <NuxtLink to="/projects" @click="navbarStore.setMobileNavToFalse">
+          Projects
+        </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/knowledge" @click="handleMobileNavToggle"
-          >Knowledge</NuxtLink
-        >
+        <NuxtLink to="/knowledge" @click="navbarStore.setMobileNavToFalse">
+          Knowledge
+        </NuxtLink>
       </li>
     </ul>
   </nav>
 </template>
 
 <script setup>
-const mobileNav = ref(false);
+import { useNavbarStore } from "../stores/navbar.store";
 
-const handleMobileNavToggle = () => {
-  mobileNav.value = !mobileNav.value;
-};
+const navbarStore = useNavbarStore();
 </script>
 
 <style lang="scss">

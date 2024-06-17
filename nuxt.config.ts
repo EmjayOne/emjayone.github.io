@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   srcDir: "src/",
   devtools: { enabled: false },
+  modules: ["@pinia/nuxt"],
   vite: {
     css: {
       preprocessorOptions: {

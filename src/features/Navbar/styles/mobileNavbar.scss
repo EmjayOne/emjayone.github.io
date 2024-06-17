@@ -4,7 +4,8 @@
   }
 
   ul {
-    width: 150px;
+    width: $mobile-navbar-width;
+    height: calc(100% - $header-height - $footer-height);
 
     border: $base-border-width solid map-get($dark, "primary");
     border-right: none;
@@ -22,8 +23,8 @@
 
     z-index: 2;
     position: absolute;
-    left: calc(100% - 150px);
-    top: $navbar-height;
+    left: calc(100% - $mobile-navbar-width);
+    top: $header-height;
 
     li {
       &:hover {

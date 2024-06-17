@@ -1,6 +1,11 @@
 footer {
+  height: $footer-height;
+
   background-color: map-get($dark, "tertiary");
 
-  padding: $base-padding * 4 0;
+  padding: $base-padding * 2 0;
   margin-top: $base-margin * 6;
+
+  display: flex;
+  align-items: center;
 }

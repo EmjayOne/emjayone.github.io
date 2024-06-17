@@ -1,7 +1,7 @@
 header {
   @extend %flex-layout;
-  height: $navbar-height;
-  padding: $base-padding $base-padding * 2;
+  height: $header-height;
+  // padding: $base-padding $base-padding * 2;
   background-color: $neutral100;
 
   .container {

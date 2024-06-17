@@ -8,7 +8,7 @@ body {
 }
 
 main {
-  height: calc(100vh - $navbar-height);
+  height: calc(100vh - $header-height);
   width: 100%;
   background-color: map-get($dark, "background");
 
