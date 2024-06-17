@@ -1,0 +1,16 @@
+nav {
+  ul {
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    gap: $base-padding;
+
+    li {
+      &:hover {
+        color: map-get($dark, "primary");
+      }
+    }
+  }
+}

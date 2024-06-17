@@ -1,0 +1,34 @@
+#mobileNav {
+  span {
+    cursor: pointer;
+  }
+
+  ul {
+    width: 150px;
+
+    border: $base-border-width solid map-get($dark, "primary");
+    border-right: none;
+    border-radius: $base-border-radius 0 0 $base-border-radius;
+    background-color: $neutral90;
+
+    padding: $base-padding;
+    list-style-type: none;
+
+    align-items: end;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: $base-padding;
+
+    z-index: 2;
+    position: absolute;
+    left: calc(100% - 150px);
+    top: $navbar-height;
+
+    li {
+      &:hover {
+        color: map-get($dark, "primary");
+      }
+    }
+  }
+}

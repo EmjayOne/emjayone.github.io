@@ -13,11 +13,14 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1.0",
+      title: "EMJAY",
       link: [
         {
           rel: "icon",
           type: "image/svg+xml",
-          href: "/logo_emjay_white_tag.svg",
+          href: "/favicon.svg",
         },
       ],
     },
