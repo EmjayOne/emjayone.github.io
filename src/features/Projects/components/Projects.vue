@@ -16,5 +16,9 @@
 <script setup lang="ts">
 import { useProjectsStore } from "../stores/projects.store";
 
+onMounted(() => {
+  document.getElementById("main")?.scrollTo(0, 0);
+});
+
 const projectsStore = useProjectsStore();
 </script>

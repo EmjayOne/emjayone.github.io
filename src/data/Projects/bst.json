@@ -5,9 +5,10 @@
     "date": "09/2022",
     "tags": ["Business", "BitCtrl"],
     "details": {
-      "desc": "Smartwatch-based voice assistant for the digitalization of construction processes.",
-      "link": "http://www.bau-smart-talk.com/",
-      "order": ["desc", "link"]
+      "desc": [
+        "Smartwatch-based voice assistant for the digitalization of construction processes."
+      ],
+      "link": "http://www.bau-smart-talk.com/"
     }
   }
 }

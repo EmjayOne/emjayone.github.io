@@ -1,7 +1,5 @@
 <template>
-  <section>
-    <ProjectDetails v-if="project" :project="project.project" />
-  </section>
+  <ProjectDetails v-if="project" :project="project.project" />
 </template>
 
 <script setup lang="ts">
@@ -13,6 +11,8 @@ onMounted(() => {
   project.value = projectsStore.getProjectById(id as string);
   if (!project.value)
     throw createError({ statusCode: 404, statusMessage: "Project not found." });
+
+  document.getElementById("main")?.scrollTo(0, 0);
 });
 
 const projectsStore = useProjectsStore();

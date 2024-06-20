@@ -5,9 +5,10 @@
     "date": "01/2020",
     "tags": ["Business", "BitCtrl"],
     "details": {
-      "desc": "The ABSOLUT project series is intended to create an automated on-demand transport solution for local public transport that is networked with conventional scheduled services and thus enables a holistic multimodal transport service.",
-      "link": "https://absolut-projekt.de/",
-      "order": ["desc", "link"]
+      "desc": [
+        "The ABSOLUT project series is intended to create an automated on-demand transport solution for local public transport that is networked with conventional scheduled services and thus enables a holistic multimodal transport service."
+      ],
+      "link": "https://absolut-projekt.de/"
     }
   }
 }

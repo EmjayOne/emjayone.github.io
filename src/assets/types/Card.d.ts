@@ -6,7 +6,8 @@ export type TProject = {
     date: string;
     tags?: string[];
     details: {
-      order: string[];
+      desc: string[];
+      link?: string;
       [key: string]: string;
     };
   };

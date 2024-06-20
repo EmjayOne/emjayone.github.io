@@ -5,13 +5,15 @@
         <h2>{{ error.statusCode }}</h2>
         <p>Ooops...</p>
         <p>{{ error.statusMessage }}</p>
-        <button class="mt-3" @click="handleError">Home</button>
+        <Button class="mt-3" title="Home" :handler="handleError" />
       </div>
     </section>
   </div>
 </template>
 
 <script setup>
+import Button from "./components/Button/Button.vue";
+
 defineProps(["error"]);
 
 const handleError = () => clearError({ redirect: "/" });
