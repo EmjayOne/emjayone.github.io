@@ -6,7 +6,16 @@
     "tags": ["Business", "BitCtrl"],
     "details": {
       "desc": [
-        "Energizing and re-energizing during an autoreclosing operation of shunt compensated transmission lines cause switching overvoltages on the transmission lines. The PSD control unit reduces overvoltages and protects electrical equipment."
+        "The PSD control unit is used to reduce increased electrodynamic and dielectric loads in the network which may be caused by normal switching of high-voltage circuit-breakers. These effects may in extreme cases reduce the reliability and life of the equipment installed in the network or lead to unnecessary tripping operations triggered by protective devices. Controlling the CLOSE and/or OPEN switching instant (controlled switching) of circuit-breakers with the PSD can effectively reduce these loads (overvoltages and inrush currents).",
+        "My responsibilities included:"
+      ],
+      "task": [
+        "implementation of custom built frontend with TypeScript based on Vue.js / Pinia",
+        "implementation of custom built backend with Python3 based on Flask",
+        "implementation of custom built REST API to connect frontend and backend",
+        "production of documentation and analyses",
+        "planning and organization of tasks for the frontend/backend team",
+        "continuous coordination with other teams and external partners"
       ],
       "link": "https://www.siemens-energy.com/global/en/home/products-services/product/accessories.html"
     }

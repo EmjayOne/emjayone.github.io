@@ -5,12 +5,14 @@
 <script setup lang="ts">
 const props = defineProps<{
   title: string;
-  handler: (...args: any[]) => VoidFunction;
+  handler?: (...args: any[]) => void;
 }>();
 </script>
 
 <style lang="scss">
 button {
+  font-family: "Poppins";
+  font-size: $font-size-md;
   color: map-get($dark, "primary");
   background-color: map-get($dark, "background");
   text-decoration: none;

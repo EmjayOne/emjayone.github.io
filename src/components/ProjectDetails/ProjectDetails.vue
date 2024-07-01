@@ -8,6 +8,9 @@
       <template v-for="desc in project.details.desc" :key="desc">
         <p class="mb-3">{{ desc }}</p>
       </template>
+      <ul v-for="task in project.details.task" :key="task">
+        <li class="mb-1">{{ task }}</li>
+      </ul>
       <ButtonLink
         class="externalLink mt-4"
         v-if="project.details.link"

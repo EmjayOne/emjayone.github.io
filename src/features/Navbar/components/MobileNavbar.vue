@@ -32,7 +32,7 @@
       </li>
       <li>
         <NuxtLink to="/experience" @click="navbarStore.setMobileNavToFalse">
-          Experience
+          Experiences
         </NuxtLink>
       </li>
     </ul>
