@@ -1,11 +1,11 @@
 <template>
-  <NuxtLink :to="`/projects/${project.id}`" id="card">
+  <NuxtLink :to="`/${props.href}/${props.project.project.id}`" id="card">
     <div class="card-container">
-      <h1>{{ project.title }}</h1>
-      <p>{{ project.text }}</p>
-      <div class="card-date">{{ project.date }}</div>
+      <h1>{{ props.project.project.title }}</h1>
+      <p>{{ props.project.project.text }}</p>
+      <div class="card-date">{{ props.project.project.date }}</div>
       <div class="card-tags">
-        <template v-for="tag in project.tags" :key="tag">
+        <template v-for="tag in props.project.project.tags" :key="tag">
           <div class="card-tag">{{ tag }}</div>
         </template>
       </div>
@@ -16,7 +16,10 @@
 <script setup lang="ts">
 import type { TProject } from "~/assets/types/Card";
 
-const { project } = defineProps<TProject>();
+const props = defineProps<{
+  project: TProject;
+  href: string;
+}>();
 </script>
 
 <style scoped lang="scss">

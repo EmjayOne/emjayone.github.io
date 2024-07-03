@@ -12,12 +12,6 @@
   overflow-y: auto;
 }
 
-.overlayContainer {
-  @extend .container;
-  height: 100%;
-  align-content: center;
-}
-
 .row {
   display: flex;
   flex-flow: row wrap;

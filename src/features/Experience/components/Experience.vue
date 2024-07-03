@@ -3,12 +3,18 @@
     <div class="container">
       <h2 class="text-highlight-primary mb-2">My Experiences</h2>
       <div class="row gap-2">
-        <div class="col-12-xxs col-6-md col-3-lg">
-          This is currently under construction.
-        </div>
+        <template v-for="item in experienceStore.experiences" :key="item">
+          <div class="col-12-xxs col-6-md col-3-lg">
+            <Card :project="item" href="experience" />
+          </div>
+        </template>
       </div>
     </div>
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useExperiencesStore } from "../stores/experience.store";
+
+const experienceStore = useExperiencesStore();
+</script>

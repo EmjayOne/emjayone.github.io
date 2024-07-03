@@ -1,0 +1,26 @@
+{
+  "project": {
+    "id": "backend-roadmap",
+    "title": "Backend Roadmap",
+    "date": "04/2024",
+    "tags": ["Backend"],
+    "details": {
+      "content": [
+        {
+          "p": [
+            "Rough guide that I follow to deepen my skills as a backend developer:"
+          ]
+        },
+        {
+          "svg": "BackendRoadmap"
+        }
+      ],
+      "source": [
+        {
+          "text": "Roadmap.sh",
+          "href": "https://roadmap.sh/backend"
+        }
+      ]
+    }
+  }
+}

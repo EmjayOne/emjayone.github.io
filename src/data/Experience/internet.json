@@ -1,0 +1,43 @@
+{
+  "project": {
+    "id": "internet",
+    "title": "Internet & Web",
+    "date": "03/2024",
+    "tags": ["Web"],
+    "details": {
+      "content": [
+        {
+          "summary": "The Internet is the backbone of the Web, the technical infrastructure that makes the Web possible. At its most basic, the Internet is a large network of computers which communicate all together.",
+          "video": "https://www.youtube-nocookie.com/embed/7_LPdttKXPc?si=GdLHqY6UGls908wG"
+        },
+        {
+          "video": "https://www.youtube-nocookie.com/embed/AlkDbnbv7dk?si=CWAbp7lYeyzDXc5W"
+        },
+        {
+          "p": ["Further reading on the subject of 'Internet':"],
+          "li": [
+            {
+              "text": "How does the Internet work?",
+              "href": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+            }
+          ]
+        },
+        {
+          "p": ["Further reading on the subject of 'Web':"],
+          "li": [
+            {
+              "text": "How the web works",
+              "href": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works"
+            }
+          ]
+        }
+      ],
+      "source": [
+        {
+          "text": "MDN Web Docs",
+          "href": "https://developer.mozilla.org/en-US/"
+        }
+      ]
+    }
+  }
+}

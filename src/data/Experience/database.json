@@ -1,0 +1,40 @@
+{
+  "project": {
+    "id": "database",
+    "title": "Database",
+    "date": "04/2024",
+    "tags": ["Backend", "Database", "SQL", "NoSQL"],
+    "details": {
+      "content": [
+        {
+          "title": "How to choose the right database?",
+          "video": "https://www.youtube-nocookie.com/embed/kkeFE6iRfMM?si=A-vbfqSGTP0c59co"
+        },
+        {
+          "title": "Database data structures",
+          "video": "https://www.youtube-nocookie.com/embed/W_v05d_2RTo?si=WarolqgB1GcD3h2m"
+        },
+        {
+          "title": "ACID",
+          "video": "https://www.youtube-nocookie.com/embed/GAe5oB742dw?si=vsGV__omkNIO7z9G"
+        },
+        {
+          "title": "Non-relational databases",
+          "video": "https://www.youtube-nocookie.com/embed/I6jB0nM9SKU?si=NUqdKzLl7w0AGEPn"
+        },
+        {
+          "title": "Why is Redis so fast?",
+          "video": "https://www.youtube-nocookie.com/embed/5TRFpFBccQM?si=2P9xb0uqK97tj_J3"
+        },
+        {
+          "title": "Relational databases",
+          "video": "https://www.youtube-nocookie.com/embed/yMqldbY2AAg?si=1QMr175-JY42yaoi"
+        },
+        {
+          "title": "Optimizing SQL queries",
+          "video": "https://www.youtube-nocookie.com/embed/BHwzDmr6d7s?si=UrLIgv38ToULwEDl"
+        }
+      ]
+    }
+  }
+}

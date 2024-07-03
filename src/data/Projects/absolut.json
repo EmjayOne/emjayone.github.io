@@ -6,7 +6,12 @@
     "tags": ["Business", "BitCtrl"],
     "details": {
       "desc": [
-        "The ABSOLUT project series is intended to create an automated on-demand transport solution for local public transport that is networked with conventional scheduled services and thus enables a holistic multimodal transport service."
+        "The ABSOLUT project series is intended to create an automated on-demand transport solution for local public transport that is networked with conventional scheduled services and thus enables a holistic multimodal transport service.",
+        "My responsibilities included:"
+      ],
+      "task": [
+        "implementation of custom built GUI elements with JavaScript for the control center application",
+        "implementation and development of OPC UA state machines and services (e.g. control service for the recording and streaming of video payload for the Node.js backend)"
       ],
       "link": "https://absolut-projekt.de/"
     }

@@ -5,7 +5,7 @@
       <div class="row gap-2">
         <template v-for="item in projectsStore.projects" :key="item">
           <div class="col-12-xxs col-6-md col-3-lg">
-            <Card :project="item.project" />
+            <Card :project="item" href="projects" />
           </div>
         </template>
       </div>

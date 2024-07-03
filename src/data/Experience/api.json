@@ -1,0 +1,48 @@
+{
+  "project": {
+    "id": "api",
+    "title": "API",
+    "date": "04/2024",
+    "tags": ["Backend", "API"],
+    "details": {
+      "content": [
+        {
+          "title": "Most Popular API Architecture Styles",
+          "video": "https://www.youtube-nocookie.com/embed/4vLxWqE94l4?si=ZrAUpMs5x2AgMTlm"
+        },
+        {
+          "title": "API Design",
+          "video": "https://www.youtube-nocookie.com/embed/_gQaygjm_hg?si=uBTu1dUF7-W1VnV4"
+        },
+        {
+          "title": "REST API",
+          "video": "https://www.youtube-nocookie.com/embed/-mN3VyJuCjM?si=MxF62g3SIu3s5-Hd"
+        },
+        {
+          "title": "HTTP Status Codes",
+          "video": "https://www.youtube-nocookie.com/embed/qmpUfWN7hh4?si=LGsMtQdbiWDWsG4C"
+        },
+        {
+          "title": "API Security",
+          "video": "https://www.youtube-nocookie.com/embed/6WZ6S-qmtqY?si=mpc9rr89RmuQrz4W"
+        },
+        {
+          "title": "API Testing",
+          "video": "https://www.youtube-nocookie.com/embed/qquIJ1Ivusg?si=H_Fr-G65ZpNwi1gM"
+        },
+        {
+          "title": "Improving API Performance",
+          "video": "https://www.youtube-nocookie.com/embed/zvWKqUiovAM?si=pBszzbNqELjYvB7Z"
+        },
+        {
+          "title": "API Gateway",
+          "video": "https://www.youtube-nocookie.com/embed/6ULyxuHKxg8?si=ymzrMUC_sxGkgxZ2"
+        },
+        {
+          "title": "Reverse Proxy vs API Gateway vs Load Balancer",
+          "video": "https://www.youtube-nocookie.com/embed/RqfaTIWc3LQ?si=xEdq7iLvRIi-6u0W"
+        }
+      ]
+    }
+  }
+}

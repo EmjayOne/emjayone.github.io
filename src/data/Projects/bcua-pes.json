@@ -7,7 +7,14 @@
     "details": {
       "desc": [
         "The bitcontrol® UA Project Engineering System (bcUA PES) is a web-based tool for creating OPC UA information models and projects in accordance with IEC 62541 v1.03. The bcUA PES server can be operated both in the cloud and on the intranet. It is multi-user and multi-project capable and especially designed for collaboration.",
-        "With the help of the bcUA Web Client, existing NodeSet files according to OPC UA Specification Part 6 Annex F can be loaded into the bcUA PES Server via a browser, edited and generated and exported as a NodeSet information model or project. The bcUA Web Client has various graphical views and wizards for effective editing of OPC UA models."
+        "With the help of the bcUA Web Client, existing NodeSet files according to OPC UA Specification Part 6 Annex F can be loaded into the bcUA PES Server via a browser, edited and generated and exported as a NodeSet information model or project. The bcUA Web Client has various graphical views and wizards for effective editing of OPC UA models.",
+        "My responsibilities included:"
+      ],
+      "task": [
+        "implementation of custom built frontend with TypeScript based on React",
+        "implementation of custom built backend with Python3 based on Django",
+        "production of documentation and analyses",
+        "planning and organization of tasks"
       ],
       "link": "https://www.bitctrl.de/de/industrieautomation/opc-ua/opc-ua-in-der-cloud-bcua-pes.html"
     }
