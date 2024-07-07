@@ -1,7 +1,10 @@
 <template>
   <section class="mt-3 pb-4">
     <div class="container">
-      <NuxtLink to="/projects" @click="navbarStore.setMobileNavToFalse">
+      <NuxtLink
+        :to="localePath('/projects')"
+        @click="navbarStore.setMobileNavToFalse"
+      >
         <span class="text-highlight-primary return"> arrow_back </span>
       </NuxtLink>
       <h2 class="text-highlight-primary mb-3 pt-3">{{ project.title }}</h2>
@@ -28,6 +31,7 @@ import { useNavbarStore } from "~/features/Navbar/stores/navbar.store";
 const { project } = defineProps<TProject>();
 
 const navbarStore = useNavbarStore();
+const localePath = useLocalePath();
 </script>
 
 <style lang="scss">

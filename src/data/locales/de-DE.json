@@ -1,0 +1,59 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "Über",
+    "projects": "Projekte",
+    "expertise": "Kompetenzen"
+  },
+  "footer": {
+    "impressum": "Impressum"
+  },
+  "home": {
+    "welcome": "Welcome to",
+    "website": "My website",
+    "caption": "Martin Junghans · Software Entwickler · Hauptberuflich seit 2019",
+    "btnAbout": "Über mich",
+    "btnProjects": "Erkunde meine Projekte",
+    "btnExpertise": "Lerne meine Kompetenzen kennen"
+  },
+  "about": {
+    "title": "Über Mich",
+    "content": [
+      "Hi, ich bin Martin Junghans! Ich bin ein professioneller Software Entwickler aus Leipzig. Meine Leidenschaft für Computer und die IT begleitet mich seit frühester Kindheit. Im Jahr 2019 habe ich den Schritt gewagt und mein Hobby zum Beruf gemacht. Seither erkunde ich neugierig und aufgeweckt verschiedene Aspekte der digitalen Welt und baue mein Wissen und meine Fähigkeiten zielstrebig und strategisch aus.",
+      "Meine Reise begann mit einem Informatik-Studium an der BA Leipzig. In dieser Zeit habe ich mir schnell und systematisch viele Grundlagen aneignen können. Meiner Neugier folgend habe ich so zunächst Python gelernt und mich mit den Themen KI, Datenstrukturen und Algorithmen auseinander gesetzt. Später habe ich dann begonnen mich als Frontend-Entwickler zu spezialisieren. Dank dieser Schwerpunktsverlagerung besitze ich nun umfassende Kenntnisse in den Bereichen HTML, CSS, JavaScript und TypeScript. Meine Fertigkeiten habe ich bereits in diversen beruflichen und privaten Projekten zur Anwendung gebracht. In diesem Rahmen habe ich ebenfalls mit verschiedenen Web-Frameworks, CSS Bibliotheken und Präprozessoren, Build Tools und Testumgebungen gearbeitet.",
+      "Aktuell baue ich meine Kenntnisse rund um das Thema Backend und Dev-Ops aus. Darüber hinaus plane ich mich in den Bereichen 'Software Architektur', 'Künstliche Intelligenz', 'Cyber Security' und 'Virtual Reality' fortzubilden."
+    ]
+  },
+  "projects": {
+    "title": "Meine Projekte"
+  },
+  "expertise": {
+    "title": "Meine Kompetenzen"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "webmaster": {
+      "name": "Martin Junghans",
+      "address": "Eduardstraße 12",
+      "city": "04229 Leipzig",
+      "country": "Deutschland",
+      "contact": {
+        "phone": "+49 172 3153962",
+        "mail": "martin.emjay.junghans{'@'}gmail.com"
+      }
+    },
+    "hoster": {
+      "name": "GitHub Inc.",
+      "address": "88 Colin P Kelly Jr St",
+      "city": "San Francisco, CA 94107",
+      "country": "Vereinigte Staaten von Amerika",
+      "contact": {
+        "mail": "support{'@'}github.com"
+      },
+      "dsgvo": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    "dsgvo": {
+      "title": "DATENSCHUTZHINWEISE"
+    }
+  }
+}

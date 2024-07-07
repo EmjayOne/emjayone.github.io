@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   srcDir: "src/",
   devtools: { enabled: false },
-  modules: ["@pinia/nuxt"],
+  modules: ["@pinia/nuxt", "@nuxtjs/i18n"],
   vite: {
     css: {
       preprocessorOptions: {
@@ -25,5 +25,23 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+  i18n: {
+    lazy: true,
+    langDir: "data/locales",
+    strategy: "prefix_except_default",
+    locales: [
+      {
+        code: "en-US",
+        name: "English",
+        file: "en-US.json",
+      },
+      {
+        code: "de-DE",
+        name: "Deutsch",
+        file: "de-DE.json",
+      },
+    ],
+    defaultLocale: "en-US",
   },
 });

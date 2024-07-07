@@ -5,7 +5,7 @@ export type TProject = {
     text?: string;
     date: string;
     tags?: string[];
-    details: TProjectDetails | TExperienceDetails;
+    details: TProjectDetails | TExpertiseDetails;
   };
 };
 
@@ -16,30 +16,30 @@ export type TProjectDetails = {
   [key: string]: string;
 };
 
-export type TExperienceDetails = {
-  content: TExperienceContent[];
-  source?: TExperienceContentLinkList[];
+export type TExpertiseDetails = {
+  content: TExpertiseContent[];
+  source?: TExpertiseContentLinkList[];
   link?: string;
   [key: string]: any;
 };
 
-export type TExperienceContent = {
+export type TExpertiseContent = {
   title?: string;
   subtitle?: string;
   summary?: string;
   video?: string;
-  p?: (string | TExperienceContentStringList)[];
-  li?: TExperienceContentLinkList[];
+  p?: (string | TExpertiseContentStringList)[];
+  li?: TExpertiseContentLinkList[];
   svg?: string;
   img?: string;
 };
 
-export type TExperienceContentLinkList = {
+export type TExpertiseContentLinkList = {
   text: string;
   href: string;
 };
 
-export type TExperienceContentStringList = {
+export type TExpertiseContentStringList = {
   ul?: string[];
   ol?: string[];
 };

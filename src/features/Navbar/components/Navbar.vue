@@ -20,5 +20,7 @@ const checkScreen = () => {
 </script>
 
 <style lang="scss">
-@import url("../styles/navbar.scss");
+.router-link-exact-active {
+  color: map-get($dark, "primary");
+}
 </style>

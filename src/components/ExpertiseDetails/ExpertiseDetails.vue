@@ -1,33 +1,33 @@
 <template>
   <section class="mt-3 pb-4">
     <div class="container">
-      <NuxtLink to="/experience" @click="navbarStore.setMobileNavToFalse">
+      <NuxtLink :to="localePath('/expertise')" @click="navbarStore.setMobileNavToFalse">
         <span class="text-highlight-primary return"> arrow_back </span>
       </NuxtLink>
       <h2 class="text-highlight-primary mb-3 pt-3">{{ project.title }}</h2>
       <template v-for="item in project.details.content" :key="item">
-        <section id="experienceSection">
-          <h4 v-if="(item as TExperienceContent).title">
-            {{ (item as TExperienceContent).title }}
+        <section id="expertiseSection">
+          <h4 v-if="(item as TExpertiseContent).title">
+            {{ (item as TExpertiseContent).title }}
           </h4>
           
-          <div v-if="(item as TExperienceContent).summary" class="summary">
+          <div v-if="(item as TExpertiseContent).summary" class="summary">
             <p>Summary</p>
-            <span>{{ (item as TExperienceContent).summary }}</span>
+            <span>{{ (item as TExpertiseContent).summary }}</span>
           </div class="summary">
 
-          <h5 v-if="(item as TExperienceContent).subtitle">
-            {{ (item as TExperienceContent).subtitle }}
+          <h5 v-if="(item as TExpertiseContent).subtitle">
+            {{ (item as TExpertiseContent).subtitle }}
           </h5>
           
           <div
-            v-if="(item as TExperienceContent).video"
-            class="experienceContainer"
+            v-if="(item as TExpertiseContent).video"
+            class="expertiseContainer"
           >
             <iframe
               width="560"
               height="315"
-              :src="(item as TExperienceContent).video"
+              :src="(item as TExpertiseContent).video"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -36,18 +36,18 @@
             ></iframe>
           </div>
 
-          <template v-for="paragraph in (item as TExperienceContent).p">
-            <p v-if="(paragraph as TExperienceContentStringList).ol">
+          <template v-for="paragraph in (item as TExpertiseContent).p">
+            <p v-if="(paragraph as TExpertiseContentStringList).ol">
               <ol>
-                <template v-for="item in (paragraph as TExperienceContentStringList).ol" :key="item">
+                <template v-for="item in (paragraph as TExpertiseContentStringList).ol" :key="item">
                   <li>{{ item }}</li>
                 </template>
               </ol>
             </p>
             
-            <p v-else-if="(paragraph as TExperienceContentStringList).ul">
+            <p v-else-if="(paragraph as TExpertiseContentStringList).ul">
               <ul>
-                <template v-for="item in (paragraph as TExperienceContentStringList).ol" :key="item">
+                <template v-for="item in (paragraph as TExpertiseContentStringList).ol" :key="item">
                   <li>{{ item }}</li>
                 </template>
               </ul>
@@ -57,15 +57,15 @@
           </template>
           
           <div
-            v-if="(item as TExperienceContent).img"
-            class="experienceContainer"
+            v-if="(item as TExpertiseContent).img"
+            class="expertiseContainer"
           >
-            <img :src="(item as TExperienceContent).img" alt="" />  
+            <img :src="(item as TExpertiseContent).img" alt="" />  
           </div>
 
-          <ul v-if="(item as TExperienceContent).li">
+          <ul v-if="(item as TExpertiseContent).li">
             <template
-              v-for="list in (item as TExperienceContent).li"
+              v-for="list in (item as TExpertiseContent).li"
               :key="list"
             >
               <li>
@@ -75,16 +75,16 @@
           </ul>
           
           <div
-            v-if="(item as TExperienceContent).svg"
-            class="experienceContainer"
+            v-if="(item as TExpertiseContent).svg"
+            class="expertiseContainer"
           >
             <BackendRoadmap
-              v-if="(item as TExperienceContent).svg ===
+              v-if="(item as TExpertiseContent).svg ===
             'BackendRoadmap'"
               class="roadmap"
             />
             <FrontendRoadmap 
-             v-if="(item as TExperienceContent).svg ===
+             v-if="(item as TExpertiseContent).svg ===
             'FrontendRoadmap'"
               class="roadmap" 
             />
@@ -94,7 +94,7 @@
 
       <section
         v-if="project.details.source"
-        id="experienceSection"
+        id="expertiseSection"
         class="mt-5"
       >
         <p>{{ "Sources: " }}</p>
@@ -102,8 +102,8 @@
           <template v-for="list in project.details.source" :key="item">
             <li>
               <ButtonLinkInline
-                :text="(list as TExperienceContentLinkList).text"
-                :href="(list as TExperienceContentLinkList).href"
+                :text="(list as TExpertiseContentLinkList).text"
+                :href="(list as TExpertiseContentLinkList).href"
               />
             </li>
           </template>
@@ -117,9 +117,9 @@
 import BackendRoadmap from "~/assets/svg/BackendRoadmap.vue";
 import FrontendRoadmap from "~/assets/svg/FrontendRoadmap.vue";
 import type {
-  TExperienceContent,
-  TExperienceContentLinkList,
-  TExperienceContentStringList,
+  TExpertiseContent,
+  TExpertiseContentLinkList,
+  TExpertiseContentStringList,
   TProject,
 } from "~/assets/types/Card";
 import { useNavbarStore } from "~/features/Navbar/stores/navbar.store";
@@ -127,6 +127,8 @@ import { useNavbarStore } from "~/features/Navbar/stores/navbar.store";
 const { project } = defineProps<TProject>();
 
 const navbarStore = useNavbarStore();
+
+const localePath = useLocalePath()
 </script>
 
 <style lang="scss">
@@ -136,7 +138,7 @@ const navbarStore = useNavbarStore();
   font-weight: 700;
 }
 
-#experienceSection {
+#expertiseSection {
   h4 {
     padding: 2rem 0 1rem;
     font-size: $font-size-lg;
@@ -176,7 +178,7 @@ const navbarStore = useNavbarStore();
     }
   }
 
-  .experienceContainer {
+  .expertiseContainer {
     padding: 1rem 0;
 
     display: flex;

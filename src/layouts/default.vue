@@ -11,6 +11,6 @@
 </template>
 
 <script setup>
-import Footer from "~/features/Footer/components/Footer.vue";
+import Footer from "~/components/Footer/Footer.vue";
 import Header from "~/features/Header/components/Header.vue";
 </script>

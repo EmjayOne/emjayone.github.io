@@ -1,9 +1,0 @@
-#welcome {
-  font-size: $font-size-xl;
-}
-
-@include xs {
-  #welcome {
-    font-size: $font-size-xxl;
-  }
-}

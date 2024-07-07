@@ -1,5 +1,8 @@
 <template>
-  <NuxtLink :to="`/${props.href}/${props.project.project.id}`" id="card">
+  <NuxtLink
+    :to="localePath(`/${props.href}/${props.project.project.id}`)"
+    id="card"
+  >
     <div class="card-container">
       <h1>{{ props.project.project.title }}</h1>
       <p>{{ props.project.project.text }}</p>
@@ -20,6 +23,8 @@ const props = defineProps<{
   project: TProject;
   href: string;
 }>();
+
+const localePath = useLocalePath();
 </script>
 
 <style scoped lang="scss">

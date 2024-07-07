@@ -1,0 +1,59 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "expertise": "Expertise"
+  },
+  "footer": {
+    "impressum": "Legal Notice"
+  },
+  "home": {
+    "welcome": "Welcome to",
+    "website": "My website",
+    "caption": "Martin Junghans · Software Developer · Professionally since 2019",
+    "btnAbout": "About me",
+    "btnProjects": "Explore my projects",
+    "btnExpertise": "Learn about my expertise"
+  },
+  "about": {
+    "title": "About Me",
+    "content": [
+      "Hi, I'm Martin Junghans! I'm a professional software developer from Leipzig. My passion for computers and IT has been with me since I was a child. In 2019, I took the plunge and turned my hobby into a career. Since then, I have been exploring various aspects of the digital world with curiosity and excitement, building up my knowledge and skills in a determined and strategic way.",
+      "My journey began with a degree in computer science at BA Leipzig. During this time, I was able to quickly and systematically acquire many basics. Following my curiosity, I first learned Python and got to grips with the topics of AI, data structures and algorithms. Later, I started to specialize as a front-end developer. Thanks to this shift in focus, I now have extensive knowledge of HTML, CSS, JavaScript and TypeScript. I have already applied my skills in various professional and private projects. In this context, I have also worked with various web frameworks, CSS libraries and preprocessors, build tools and test environments.",
+      "I am currently expanding my knowledge of backend and dev ops. In addition, I plan to continue my education in the areas of software architecture, artificial intelligence, cyber security and virtual reality."
+    ]
+  },
+  "projects": {
+    "title": "My Projects"
+  },
+  "expertise": {
+    "title": "My Expertise"
+  },
+  "impressum": {
+    "title": "Legal Notice",
+    "webmaster": {
+      "name": "Martin Junghans",
+      "address": "Eduardstraße 12",
+      "city": "04229 Leipzig",
+      "country": "Germany",
+      "contact": {
+        "phone": "+49 172 3153962",
+        "mail": "martin.emjay.junghans{'@'}gmail.com"
+      }
+    },
+    "hoster": {
+      "name": "GitHub Inc.",
+      "address": "88 Colin P Kelly Jr St",
+      "city": "San Francisco, CA 94107",
+      "country": "United States of America",
+      "contact": {
+        "mail": "support{'@'}github.com"
+      },
+      "dsgvo": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    "dsgvo": {
+      "title": "PRIVACY POLICY"
+    }
+  }
+}

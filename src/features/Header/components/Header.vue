@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container">
-      <NuxtLink to="/" @click="navbarStore.setMobileNavToFalse">
+      <NuxtLink :to="localePath('/')" @click="navbarStore.setMobileNavToFalse">
         <LogoEmjay_white_withText class="logo" />
       </NuxtLink>
 
@@ -16,6 +16,7 @@ import Navbar from "~/features/Navbar/components/Navbar.vue";
 import { useNavbarStore } from "~/features/Navbar/stores/navbar.store";
 
 const navbarStore = useNavbarStore();
+const localePath = useLocalePath();
 </script>
 
 <style lang="scss">

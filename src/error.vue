@@ -5,7 +5,11 @@
         <h2>{{ error.statusCode }}</h2>
         <p>Ooops...</p>
         <p>{{ error.statusMessage }}</p>
-        <Button class="mt-3" title="Home" :handler="handleError" />
+        <Button
+          class="mt-3"
+          :title="$t('navbar.home')"
+          :handler="handleError"
+        />
       </div>
     </section>
   </div>
@@ -16,7 +20,8 @@ import Button from "./components/Button/Button.vue";
 
 defineProps(["error"]);
 
-const handleError = () => clearError({ redirect: "/" });
+const localePath = useLocalePath();
+const handleError = () => clearError({ redirect: localePath("/") });
 </script>
 
 <style scoped lang="scss">
