@@ -1,15 +1,14 @@
 <template>
   <NuxtLink
-    :to="localePath(`/${props.href}/${props.project.project.id}`)"
+    :to="localePath(`/${props.href}/${props.project.id.body.static}`)"
     id="card"
   >
     <div class="card-container">
-      <h1>{{ props.project.project.title }}</h1>
-      <p>{{ props.project.project.text }}</p>
-      <div class="card-date">{{ props.project.project.date }}</div>
+      <h1>{{ props.project.title.body.static }}</h1>
+      <div class="card-date">{{ props.project.date.body.static }}</div>
       <div class="card-tags">
-        <template v-for="tag in props.project.project.tags" :key="tag">
-          <div class="card-tag">{{ tag }}</div>
+        <template v-for="tag in props.project.tags" :key="tag">
+          <div class="card-tag">{{ tag.body.static }}</div>
         </template>
       </div>
     </div>
@@ -17,10 +16,8 @@
 </template>
 
 <script setup lang="ts">
-import type { TProject } from "~/assets/types/Card";
-
 const props = defineProps<{
-  project: TProject;
+  project: any;
   href: string;
 }>();
 
@@ -52,22 +49,19 @@ const localePath = useLocalePath();
 
   .card {
     &-container {
+      width: 100%;
       display: flex;
       flex-flow: column wrap;
       gap: $base-margin;
 
       h1 {
-        height: 5rem;
+        height: 12.75rem;
+        width: 100%;
         color: map-get($dark, "text");
-      }
 
-      p {
-        height: 7rem;
-
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
       }
     }
 

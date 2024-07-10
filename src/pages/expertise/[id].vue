@@ -1,27 +1,24 @@
 <template>
-  <ExpertiseDetails v-if="project" :project="project.project" />
+  <ExpertiseDetails v-if="expertise" :expertise="expertise" />
 </template>
 
 <script setup lang="ts">
-import type { TProject } from "~/assets/types/Card";
 import ExpertiseDetails from "~/components/ExpertiseDetails/ExpertiseDetails.vue";
-import { useExpertiseStore } from "~/features/Expertise/stores/expertise.store";
 
 onMounted(() => {
-  const { id } = useRoute().params;
-  project.value = expertiseStore.getExpertiseById(id as string);
-  if (!project.value)
-    throw createError({ statusCode: 404, statusMessage: "Project not found." });
-
   document.getElementById("main")?.scrollTo(0, 0);
 });
 
-const expertiseStore = useExpertiseStore();
+const { tm } = useI18n();
 const { id } = useRoute().params;
 
-const project = ref<TProject | undefined>(undefined);
+const expertise = ref();
+const expertises = computed(() => tm("expertise.expertise") as any);
 
-project.value = expertiseStore.getExpertiseById(id as string);
-if (!project.value)
-  throw createError({ statusCode: 404, statusMessage: "Project not found." });
+expertise.value = expertises.value.find(
+  (item: any) => item.id.body.static === id
+);
+
+if (!expertise.value)
+  throw createError({ statusCode: 404, statusMessage: "Expertise not found." });
 </script>

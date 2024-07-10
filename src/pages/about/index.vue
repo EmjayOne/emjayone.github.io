@@ -10,4 +10,8 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+onMounted(() => {
+  document.getElementById("main")?.scrollTo(0, 0);
+});
+</script>

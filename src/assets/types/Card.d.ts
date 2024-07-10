@@ -1,19 +1,10 @@
-export type TProject = {
-  project: {
-    id: string;
-    title: string;
-    text?: string;
-    date: string;
-    tags?: string[];
-    details: TProjectDetails | TExpertiseDetails;
-  };
-};
-
-export type TProjectDetails = {
-  desc: string[];
-  task?: string[];
-  link?: string;
-  [key: string]: string;
+export type TExpertise = {
+  id: string;
+  title: string;
+  text?: string;
+  date: string;
+  tags?: string[];
+  details: TExpertiseDetails;
 };
 
 export type TExpertiseDetails = {

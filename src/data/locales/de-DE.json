@@ -25,10 +25,682 @@
     ]
   },
   "projects": {
-    "title": "Meine Projekte"
+    "title": "Meine Projekte",
+    "visitProjectWebsite": "Projekt-Website besuchen",
+    "projects": [
+      {
+        "id": "se-psd04",
+        "title": "Siemens Energy PSD04",
+        "date": "07/2023",
+        "tags": ["Business", "BitCtrl"],
+        "details": {
+          "desc": [
+            "Das PSD-Steuergerät dient zur Reduzierung erhöhter elektrodynamischer und dielektrischer Belastungen im Netz, die durch das normale Schalten von Hochspannungs-Leistungsschaltern verursacht werden können. Diese Effekte können im Extremfall die Zuverlässigkeit und Lebensdauer der im Netz installierten Geräte beeinträchtigen oder zu unnötigen Auslösungen von Schutzeinrichtungen führen. Die Steuerung des Einschaltzeitpunkts und/oder des Ausschaltzeitpunkts (kontrolliertes Schalten) von Leistungsschaltern mit dem PSD kann diese Belastungen (Überspannungen und Einschaltströme) wirksam reduzieren.",
+            "Zu meinen Aufgaben gehörten:"
+          ],
+          "task": [
+            "Implementierung eines kundenspezifischen Frontends mit TypeScript auf der Basis von Vue.js / Pinia",
+            "Implementierung eines kundenspezifischen Backends mit Python3 auf der Basis von Flask",
+            "Implementierung einer kundenspezifischen REST API",
+            "Erstellung von Dokumentationen und Analysen",
+            "Planung und Organisation von Aufgaben für das Frontend/Backend-Team",
+            "kontinuierliche Abstimmung mit anderen Teams und externen Partnern"
+          ],
+          "link": "https://www.siemens-energy.com/global/en/home/products-services/product/accessories.html"
+        }
+      },
+      {
+        "id": "bst",
+        "title": "BauSmartTalk",
+        "date": "09/2022",
+        "tags": ["Business", "BitCtrl"],
+        "details": {
+          "desc": [
+            "Forschungsprojekt zur Entwicklung eines Smartwatch-basierten Sprachassistenten für die Digitalisierung von Bauprozessen.",
+            "Zu meinen Aufgaben gehörten:"
+          ],
+          "task": [
+            "Anbindung von IoT-Sensoren über lokale Netzwerkserver an zentrale Anwendungsserver",
+            "Implementierung von lokalen Netzwerkservern zur Verwaltung verschiedener LoRaWAN Endknoten und Gateways mit ChirpStack",
+            "Integration der Informationsübertragung vom lokalen Netzwerkserver zum Applikationsserver über HTTP, MQTT, OPC UA mit bcUA RTS, OpenDDS und RTI DDS",
+            "Konfiguration und Administration des zentralen Applikationsservers",
+            "Automatisierung der Server- und Netzwerkkonfigurationen mittels Ansible",
+            "Kontinuierliche Abstimmung mit anderen Projektpartnern"
+          ],
+          "link": "http://www.bau-smart-talk.com/"
+        }
+      },
+      {
+        "id": "bcua-pes",
+        "title": "bitcontrol\u00AE Unified Architecture PES",
+        "date": "01/2022",
+        "tags": ["Business", "BitCtrl"],
+        "details": {
+          "desc": [
+            "Das bitcontrol® UA Project Engineering System (bcUA PES) ist ein Web-basiertes Werkzeug zur Erstellung von OPC UA Informationsmodellen und Projekten nach IEC 62541 v1.03. Der bcUA PES Server kann sowohl in der Cloud als auch im Intranet betrieben werden. Er ist multi-user- und multi-projektfähig und insbesondere auf Kollaboration ausgelegt.",
+            "Mit Hilfe des bcUA Web Clients können über einen Browser bestehende NodeSet Files gemäß OPC UA Specification Part 6 Annex F in den bcUA PES Server geladen, editiert und als NodeSet Informationsmodell bzw. Projekt generiert und exportiert werden. Der bcUA Web Client verfügt über verschiedene grafische Ansichten und Wizards für eine effektive Bearbeitung der OPC UA Modelle.",
+            "Zu meinen Aufgaben gehörten:"
+          ],
+          "task": [
+            "Implementierung eines individuellen Frontends mit TypeScript auf der Basis von React",
+            "Implementierung eines individuellen Backends mit Python3 auf der Basis von Django",
+            "Erstellung von Dokumentationen und Analysen",
+            "Aufgabenplanung"
+          ],
+          "link": "https://www.bitctrl.de/de/industrieautomation/opc-ua/opc-ua-in-der-cloud-bcua-pes.html"
+        }
+      },
+      {
+        "id": "absolut",
+        "title": "ABSOLUT",
+        "date": "01/2020",
+        "tags": ["Business", "BitCtrl"],
+        "details": {
+          "desc": [
+            "Mit der Projektreihe ABSOLUT soll eine automatisierte On-Demand-Verkehrslösung für den öffentlichen Personennahverkehr geschaffen werden, die mit dem konventionellen Linienverkehr vernetzt ist und so ein ganzheitliches verkehrsträgerübergreifendes Angebot ermöglicht.",
+            "Zu meinen Aufgaben gehörten:"
+          ],
+          "task": [
+            "Implementierung von individuellen GUI-Elementen mit JavaScript für die Leitstellenanwendung",
+            "Implementierung und Entwicklung von OPC UA Zustandsautomaten und Diensten (z.B. Kontrolldienst für die Aufzeichnung und das Streaming von Video Payload für das Node.js Backend)"
+          ],
+          "link": "https://absolut-projekt.de/"
+        }
+      }
+    ]
   },
   "expertise": {
-    "title": "Meine Kompetenzen"
+    "title": "Meine Kompetenzen",
+    "summary": "Zusammenfassung",
+    "sources": "Quellen",
+    "expertise": [
+      {
+        "id": "accessibility",
+        "title": "Barriere\u00ADfreiheit",
+        "date": "04/2024",
+        "tags": ["Frontend", "Accessibility"],
+        "details": {
+          "content": [
+            {
+              "title": "Vielfalt",
+              "p": [
+                "Es gibt fast 8 Milliarden Menschen auf der Welt. Nach Angaben der Weltgesundheitsorganisation gibt es über eine Milliarde Menschen mit Behinderungen. Das sind etwa 15 % der Bevölkerung.",
+                "Der Grundsatz, dass jeder das Internet unabhängig von einer Behinderung gleichermaßen nutzen können sollte, ist heute genauso wichtig wie vor zwanzig Jahren. Menschen, die ihre Arme nur eingeschränkt gebrauchen können, Menschen, die nicht gut hören oder sehen können, und Menschen, die Informationen anders verarbeiten, sollten alle in der Lage sein, auf Websites und Anwendungen zuzugreifen und sie zu nutzen. Webtechnologien verfügen über viele integrierte Funktionen für die Barrierefreiheit. Man sollte sie kennen, damit man keinen seiner Nutzer ausschließt."
+              ]
+            },
+            {
+              "title": "Werkzeuge für Barrierefreiheit",
+              "li": [
+                {
+                  "text": "Silktide accessibility checker",
+                  "href": "https://silktide.com/tools/toolbar/"
+                }
+              ]
+            },
+            {
+              "title": "Bewährte Praktiken für CSS und JavaScript",
+              "p": ["Interessante Artikel:"],
+              "li": [
+                {
+                  "text": "CSS und JavaScript",
+                  "href": "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript"
+                },
+                {
+                  "text": "Über die Tastatur navigierbare JavaScript-Widgets",
+                  "href": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets"
+                }
+              ]
+            },
+            {
+              "title": "WAI-ARIA Grundlagen",
+              "p": ["Interessante Artikel:"],
+              "li": [
+                {
+                  "text": "WAI-ARIA Grundlagen",
+                  "href": "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics"
+                },
+                {
+                  "text": "ARIA",
+                  "href": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"
+                }
+              ]
+            },
+            {
+              "title": "Multimediale Barrierefreiheit",
+              "p": ["Interessante Artikel:"],
+              "li": [
+                {
+                  "text": "Multimedia",
+                  "href": "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia"
+                }
+              ]
+            },
+            {
+              "title": "Mobile Barrierefreiheit",
+              "p": ["Interessante Artikel:"],
+              "li": [
+                {
+                  "text": "Handy",
+                  "href": "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Mobile"
+                },
+                {
+                  "text": "Checkliste für mobile Barrierefreiheit",
+                  "href": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Mobile_accessibility_checklist"
+                }
+              ]
+            }
+          ],
+          "source": [
+            {
+              "text": "W3Schools",
+              "href": "https://www.w3schools.com/accessibility/index.php"
+            },
+            {
+              "text": "MDN Web Docs",
+              "href": "https://developer.mozilla.org/en-US/docs/Web/Accessibility"
+            }
+          ]
+        }
+      },
+      {
+        "id": "api",
+        "title": "API",
+        "date": "04/2024",
+        "tags": ["Backend", "API"],
+        "details": {
+          "content": [
+            {
+              "title": "Beliebteste API-Architekturstile",
+              "video": "https://www.youtube-nocookie.com/embed/4vLxWqE94l4?si=ZrAUpMs5x2AgMTlm"
+            },
+            {
+              "title": "API Design",
+              "video": "https://www.youtube-nocookie.com/embed/_gQaygjm_hg?si=uBTu1dUF7-W1VnV4"
+            },
+            {
+              "title": "REST API",
+              "video": "https://www.youtube-nocookie.com/embed/-mN3VyJuCjM?si=MxF62g3SIu3s5-Hd"
+            },
+            {
+              "title": "HTTP Status Codes",
+              "video": "https://www.youtube-nocookie.com/embed/qmpUfWN7hh4?si=LGsMtQdbiWDWsG4C"
+            },
+            {
+              "title": "API Sicherheit",
+              "video": "https://www.youtube-nocookie.com/embed/6WZ6S-qmtqY?si=mpc9rr89RmuQrz4W"
+            },
+            {
+              "title": "API Tests",
+              "video": "https://www.youtube-nocookie.com/embed/qquIJ1Ivusg?si=H_Fr-G65ZpNwi1gM"
+            },
+            {
+              "title": "Verbessern der API Leistung",
+              "video": "https://www.youtube-nocookie.com/embed/zvWKqUiovAM?si=pBszzbNqELjYvB7Z"
+            },
+            {
+              "title": "API Gateway",
+              "video": "https://www.youtube-nocookie.com/embed/6ULyxuHKxg8?si=ymzrMUC_sxGkgxZ2"
+            },
+            {
+              "title": "Reverse Proxy vs. API Gateway vs. Load Balancer",
+              "video": "https://www.youtube-nocookie.com/embed/RqfaTIWc3LQ?si=xEdq7iLvRIi-6u0W"
+            }
+          ]
+        }
+      },
+      {
+        "id": "backend-roadmap",
+        "title": "Backend Roadmap",
+        "date": "04/2024",
+        "tags": ["Backend"],
+        "details": {
+          "content": [
+            {
+              "p": [
+                "Grober Leitfaden, dem ich folge, um meine Fähigkeiten als Backend-Entwickler zu vertiefen:"
+              ]
+            },
+            {
+              "svg": "BackendRoadmap"
+            }
+          ],
+          "source": [
+            {
+              "text": "Roadmap.sh",
+              "href": "https://roadmap.sh/backend"
+            }
+          ]
+        }
+      },
+      {
+        "id": "cyber-security-roadmap",
+        "title": "Cybersicherheit Roadmap",
+        "date": "04/2024",
+        "tags": ["Cyber Security"],
+        "details": {
+          "content": [
+            {
+              "p": [
+                "Grober Leitfaden, dem ich folge, um meine Fähigkeiten im Bereich der Cybersicherheit zu vertiefen:"
+              ]
+            },
+            {
+              "img": "https://substackcdn.com/image/fetch/w_1100,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F12f36c83-a6b2-413d-898a-e54b27a2acb6_1536x1536.gif"
+            }
+          ],
+          "source": [
+            {
+              "text": "By Henry Jiang for ByteByteGo Newsletter EP106",
+              "href": "https://blog.bytebytego.com/p/ep106-how-does-javascript-work"
+            }
+          ]
+        }
+      },
+      {
+        "id": "database",
+        "title": "Datenbank",
+        "date": "04/2024",
+        "tags": ["Backend", "Database", "SQL", "NoSQL"],
+        "details": {
+          "content": [
+            {
+              "title": "Wie wählt man die richtige Datenbank aus?",
+              "video": "https://www.youtube-nocookie.com/embed/kkeFE6iRfMM?si=A-vbfqSGTP0c59co"
+            },
+            {
+              "title": "Datenbank-Datenstrukturen",
+              "video": "https://www.youtube-nocookie.com/embed/W_v05d_2RTo?si=WarolqgB1GcD3h2m"
+            },
+            {
+              "title": "ACID",
+              "video": "https://www.youtube-nocookie.com/embed/GAe5oB742dw?si=vsGV__omkNIO7z9G"
+            },
+            {
+              "title": "Nicht-relationale Datenbanken",
+              "video": "https://www.youtube-nocookie.com/embed/I6jB0nM9SKU?si=NUqdKzLl7w0AGEPn"
+            },
+            {
+              "title": "Warum ist Redis so schnell?",
+              "video": "https://www.youtube-nocookie.com/embed/5TRFpFBccQM?si=2P9xb0uqK97tj_J3"
+            },
+            {
+              "title": "Relationale Datenbanken",
+              "video": "https://www.youtube-nocookie.com/embed/yMqldbY2AAg?si=1QMr175-JY42yaoi"
+            },
+            {
+              "title": "Optimieren von SQL-Abfragen",
+              "video": "https://www.youtube-nocookie.com/embed/BHwzDmr6d7s?si=UrLIgv38ToULwEDl"
+            }
+          ]
+        }
+      },
+      {
+        "id": "deployment",
+        "title": "Bereitstellung",
+        "date": "04/2024",
+        "tags": ["Deployment"],
+        "details": {
+          "content": [
+            {
+              "title": "Wie große Technologieunternehmen Code in die Produktion überführen",
+              "video": "https://www.youtube-nocookie.com/embed/xSPA2yBgDgA?si=jt20VUM1YUGowt7I"
+            },
+            {
+              "title": "Die fünf meistgenutzten Bereitstellungsstrategien",
+              "video": "https://www.youtube-nocookie.com/embed/AWVTKBUnoIg?si=tmu96PoAyA5BBoIy"
+            }
+          ]
+        }
+      },
+      {
+        "id": "frontend-architectural-patterns",
+        "title": "Architektur\u00ADmuster für Frontends",
+        "date": "04/2024",
+        "tags": ["Frontend"],
+        "details": {
+          "content": [
+            {
+              "title": "Die fünf meistgenutzten Architekturmuster",
+              "video": "https://www.youtube-nocookie.com/embed/f6zXyq4VPP8?si=IoXmLKMgVSoOG39e"
+            },
+            {
+              "title": "Client Architekturmuster",
+              "video": "https://www.youtube-nocookie.com/embed/I5c7fBgvkNY?si=g2phmK9PnMqNQqqL"
+            }
+          ]
+        }
+      },
+      {
+        "id": "frontend-roadmap",
+        "title": "Frontend Roadmap",
+        "date": "03/2024",
+        "tags": ["Frontend"],
+        "details": {
+          "content": [
+            {
+              "p": [
+                "Grober Leitfaden, dem ich folge, um meine Fähigkeiten als Frontend-Entwickler zu vertiefen:"
+              ]
+            },
+            {
+              "svg": "FrontendRoadmap"
+            }
+          ],
+          "source": [
+            {
+              "text": "Roadmap.sh",
+              "href": "https://roadmap.sh/frontend"
+            }
+          ]
+        }
+      },
+      {
+        "id": "html",
+        "title": "HTML",
+        "date": "03/2024",
+        "tags": ["Frontend", "HTML"],
+        "details": {
+          "content": [
+            {
+              "p": [
+                "Dem Team von web.dev ist es hervorragend gelungen, alle Aspekte von HTML in einem Kurs zusammenzufassen.",
+                "Die einzelnen Themen sind unten verlinkt:"
+              ],
+              "li": [
+                {
+                  "text": "Willkommen",
+                  "href": "https://web.dev/learn/html/welcome"
+                },
+                {
+                  "text": "HTML-Übersicht",
+                  "href": "https://web.dev/learn/html/overview"
+                },
+                {
+                  "text": "Dokumentenstruktur",
+                  "href": "https://web.dev/learn/html/document-structure"
+                },
+                {
+                  "text": "Metadata",
+                  "href": "https://web.dev/learn/html/metadata"
+                },
+                {
+                  "text": "Semantisches HTML",
+                  "href": "https://web.dev/learn/html/semantic-html"
+                },
+                {
+                  "text": "Überschriften und Abschnitte",
+                  "href": "https://web.dev/learn/html/headings-and-sections"
+                },
+                {
+                  "text": "Attribute",
+                  "href": "https://web.dev/learn/html/attributes"
+                },
+                {
+                  "text": "Textgrundlagen",
+                  "href": "https://web.dev/learn/html/text-basics"
+                },
+                {
+                  "text": "Links",
+                  "href": "https://web.dev/learn/html/links"
+                },
+                {
+                  "text": "Listen",
+                  "href": "https://web.dev/learn/html/lists"
+                },
+                {
+                  "text": "Navigation",
+                  "href": "https://web.dev/learn/html/navigation"
+                },
+                {
+                  "text": "Tabellen",
+                  "href": "https://web.dev/learn/html/tables"
+                },
+                {
+                  "text": "Formulare",
+                  "href": "https://web.dev/learn/html/forms"
+                },
+                {
+                  "text": "Bilder",
+                  "href": "https://web.dev/learn/html/images"
+                },
+                {
+                  "text": "Audio und Video",
+                  "href": "https://web.dev/learn/html/audio-video"
+                },
+                {
+                  "text": "Vorlage, Anzeigefläche und Schatten",
+                  "href": "https://web.dev/learn/html/template"
+                },
+                {
+                  "text": "HTML-APIs",
+                  "href": "https://web.dev/learn/html/apis"
+                },
+                {
+                  "text": "Fokus",
+                  "href": "https://web.dev/learn/html/focus"
+                },
+                {
+                  "text": "Andere Inline-Textelemente",
+                  "href": "https://web.dev/learn/html/inline-text"
+                },
+                {
+                  "text": "Details and Zusammenfassung",
+                  "href": "https://web.dev/learn/html/details"
+                },
+                {
+                  "text": "Dialogfeld",
+                  "href": "https://web.dev/learn/html/dialog"
+                }
+              ]
+            },
+            {
+              "p": ["Weitere Lektüre zum Thema 'Semantisches HTML':"],
+              "li": [
+                {
+                  "text": "Semantisches HTML schreiben",
+                  "href": "https://cs.fyi/guide/writing-semantic-html"
+                }
+              ]
+            }
+          ],
+          "source": [
+            {
+              "text": "web.dev",
+              "href": "https://web.dev/learn/html/"
+            },
+            {
+              "text": "cs.fyi",
+              "href": "https://cs.fyi/guide/writing-semantic-html"
+            }
+          ]
+        }
+      },
+      {
+        "id": "internet",
+        "title": "Internet & Web",
+        "date": "03/2024",
+        "tags": ["Web"],
+        "details": {
+          "content": [
+            {
+              "summary": "Das Internet ist das Rückgrat des Webs, die technische Infrastruktur, die das Web möglich macht. Im Grunde genommen ist das Internet ein großes Netz von Computern, die alle miteinander kommunizieren.",
+              "video": "https://www.youtube-nocookie.com/embed/7_LPdttKXPc?si=GdLHqY6UGls908wG"
+            },
+            {
+              "video": "https://www.youtube-nocookie.com/embed/AlkDbnbv7dk?si=CWAbp7lYeyzDXc5W"
+            },
+            {
+              "p": ["Weitere Lektüre zum Thema 'Internet':"],
+              "li": [
+                {
+                  "text": "Wie funktioniert das Internet?",
+                  "href": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+                }
+              ]
+            },
+            {
+              "p": ["Weitere Lektüre zum Thema 'Web':"],
+              "li": [
+                {
+                  "text": "Wie das Web funktioniert",
+                  "href": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works"
+                }
+              ]
+            }
+          ],
+          "source": [
+            {
+              "text": "MDN Web Docs",
+              "href": "https://developer.mozilla.org/en-US/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "kafka",
+        "title": "Kafka",
+        "date": "04/2024",
+        "tags": ["Backend", "Message Broker"],
+        "details": {
+          "content": [
+            {
+              "title": "Kann Kafka Nachrichten verlieren?",
+              "summary": "Es empfiehlt sich, synchrone und asynchrone Übertragungen zu kombinieren, wobei asynchrone Übertragungen in der Verarbeitungsschleife für einen höheren Durchsatz und synchrone Übertragungen bei der Ausnahmebehandlung verwendet werden, um sicherzustellen, dass der letzte Offset immer übertragen wird.",
+              "p": [
+                "Viele Entwickler sind der Meinung, dass Kafka aufgrund seines Designs garantiert keine Nachrichten verliert. Es ist jedoch wichtig, die Feinheiten der Architektur und Konfiguration von Kafka zu verstehen, um wirklich zu begreifen, wie und wann Nachrichten verloren gehen können, und - was noch wichtiger ist - wie man solche Szenarien verhindern kann.",
+                "Das folgende Diagramm zeigt, wie eine Nachricht während ihres Lebenszyklus in Kafka verloren gehen kann."
+              ],
+              "img": "https://substackcdn.com/image/fetch/w_550,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6d1c69b6-3125-4310-838e-4549442ea08a_1280x1664.gif"
+            },
+            {
+              "subtitle": "Produzent (Producer)",
+              "p": [
+                "Wenn man producer.send() aufruft, um eine Nachricht zu senden, wird diese nicht direkt an den Vermittler gesendet. Es gibt zwei Threads und eine Warteschlange, die am Prozess des Nachrichtenversands beteiligt sind:",
+                {
+                  "ol": [
+                    "Anwendungsthread",
+                    "Datensatz-Akkumulator",
+                    "Absender-Thread (I/O-Thread)"
+                  ]
+                },
+                "Man muss für den Produzenten die richtigen 'Bestätigungen' und 'Wiederholungsversuche' konfigurieren, um sicherzustellen, dass die Nachrichten an den Vermittler gesendet werden."
+              ]
+            },
+            {
+              "subtitle": "Vermittler (Broker)",
+              "p": [
+                "Ein Vermittler-Cluster sollte keine Nachrichten verlieren, wenn er normal funktioniert. Allerdings muss man wissen, welche Extremsituationen zu einem Nachrichtenverlust führen können:",
+                {
+                  "ol": [
+                    "Die Nachrichten werden in der Regel asynchron auf die Festplatte übertragen, um den I/O-Durchsatz zu erhöhen. Wenn die Instanz also ausfällt, bevor die Übertragung stattfindet, gehen die Nachrichten verloren.",
+                    "Die Replikate im Kafka-Cluster müssen ordnungsgemäß konfiguriert sein, damit sie eine gültige Kopie der Daten enthalten. Der Determinismus bei der Datensynchronisierung ist wichtig."
+                  ]
+                }
+              ]
+            },
+            {
+              "subtitle": "Verbraucher (Consumer)",
+              "p": [
+                "Kafka bietet verschiedene Möglichkeiten, Nachrichten zu bestätigen. Auto-Committing kann die Verarbeitung von Datensätzen bestätigen, bevor sie tatsächlich verarbeitet werden. Wenn der Verbraucher in der Mitte der Verarbeitung ausfällt, werden einige Datensätze möglicherweise nie verarbeitet."
+              ]
+            }
+          ],
+          "source": [
+            {
+              "text": "ByteByteGo Newsletter EP106",
+              "href": "https://blog.bytebytego.com/p/ep106-how-does-javascript-work"
+            }
+          ]
+        }
+      },
+      {
+        "id": "responsive-design",
+        "title": "Responsives Design",
+        "date": "04/2024",
+        "tags": ["Frontend", "CSS"],
+        "details": {
+          "content": [
+            {
+              "p": [
+                "Dem Team von web.dev ist es hervorragend gelungen, alle Aspekte des responsiven Designs in einem Kurs zusammenzufassen.",
+                "Ich empfand es als sehr hilfreich und möchte es weiterempfehlen.",
+                "Die einzelnen Themen sind unten verlinkt:"
+              ]
+            },
+            {
+              "li": [
+                {
+                  "text": "Einführung",
+                  "href": "https://web.dev/learn/design/intro"
+                },
+                {
+                  "text": "Medienabfragen",
+                  "href": "https://web.dev/learn/design/media-queries"
+                },
+                {
+                  "text": "Lokalisierung",
+                  "href": "https://web.dev/learn/design/internationalization"
+                },
+                {
+                  "text": "Makro-Layouts",
+                  "href": "https://web.dev/learn/design/macro-layouts"
+                },
+                {
+                  "text": "Micro-Layouts",
+                  "href": "https://web.dev/learn/design/micro-layouts"
+                },
+                {
+                  "text": "Typografie",
+                  "href": "https://web.dev/learn/design/typography"
+                },
+                {
+                  "text": "Responsive Bilder",
+                  "href": "https://web.dev/learn/design/responsive-images"
+                },
+                {
+                  "text": "Das Bildelement",
+                  "href": "https://web.dev/learn/design/picture-element"
+                },
+                {
+                  "text": "Symbole",
+                  "href": "https://web.dev/learn/design/icons"
+                },
+                {
+                  "text": "Designs",
+                  "href": "https://web.dev/learn/design/theming"
+                },
+                {
+                  "text": "Bedienungshilfen",
+                  "href": "https://web.dev/learn/design/accessibility"
+                },
+                {
+                  "text": "Interaktion",
+                  "href": "https://web.dev/learn/design/interaction"
+                },
+                {
+                  "text": "Muster auf der Benutzeroberfläche",
+                  "href": "https://web.dev/learn/design/ui-patterns"
+                },
+                {
+                  "text": "Medienfunktionen",
+                  "href": "https://web.dev/learn/design/media-features"
+                },
+                {
+                  "text": "Bildschirmkonfigurationen",
+                  "href": "https://web.dev/learn/design/screen-configurations"
+                }
+              ]
+            }
+          ],
+          "source": [
+            {
+              "text": "web.dev",
+              "href": "https://web.dev/learn/design/"
+            }
+          ]
+        }
+      }
+    ]
   },
   "impressum": {
     "title": "Impressum",

@@ -12,5 +12,5 @@
 
 <script setup>
 import Footer from "~/components/Footer/Footer.vue";
-import Header from "~/features/Header/components/Header.vue";
+import Header from "~/components/Header/Header.vue";
 </script>

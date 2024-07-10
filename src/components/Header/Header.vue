@@ -20,5 +20,20 @@ const localePath = useLocalePath();
 </script>
 
 <style lang="scss">
-@import url("../styles/header.scss");
+header {
+  @extend %flex-layout;
+  height: $header-height;
+  background-color: $neutral100;
+
+  .container {
+    @extend %flex-layout;
+  }
+}
+
+.logo {
+  height: 60px;
+
+  fill: map-get($dark, "primary");
+  stroke: map-get($dark, "primary");
+}
 </style>

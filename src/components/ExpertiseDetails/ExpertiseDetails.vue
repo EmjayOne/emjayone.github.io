@@ -4,30 +4,30 @@
       <NuxtLink :to="localePath('/expertise')" @click="navbarStore.setMobileNavToFalse">
         <span class="text-highlight-primary return"> arrow_back </span>
       </NuxtLink>
-      <h2 class="text-highlight-primary mb-3 pt-3">{{ project.title }}</h2>
-      <template v-for="item in project.details.content" :key="item">
+      <h2 class="text-highlight-primary mb-3 pt-3">{{ expertise.title.body.static }}</h2>
+      <template v-for="item in expertise.details.content" :key="item">
         <section id="expertiseSection">
-          <h4 v-if="(item as TExpertiseContent).title">
-            {{ (item as TExpertiseContent).title }}
+          <h4 v-if="item.title">
+            {{ item.title.body.static }}
           </h4>
           
-          <div v-if="(item as TExpertiseContent).summary" class="summary">
-            <p>Summary</p>
-            <span>{{ (item as TExpertiseContent).summary }}</span>
+          <div v-if="item.summary" class="summary">
+            <p>{{ $t('expertise.summary') }}</p>
+            <span>{{ item.summary.body.static }}</span>
           </div class="summary">
 
-          <h5 v-if="(item as TExpertiseContent).subtitle">
-            {{ (item as TExpertiseContent).subtitle }}
+          <h5 v-if="item.subtitle">
+            {{ item.subtitle.body.static }}
           </h5>
           
           <div
-            v-if="(item as TExpertiseContent).video"
+            v-if="item.video"
             class="expertiseContainer"
           >
             <iframe
               width="560"
               height="315"
-              :src="(item as TExpertiseContent).video"
+              :src="item.video.body.static"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -36,55 +36,55 @@
             ></iframe>
           </div>
 
-          <template v-for="paragraph in (item as TExpertiseContent).p">
-            <p v-if="(paragraph as TExpertiseContentStringList).ol">
+          <template v-for="paragraph in item.p">
+            <p v-if="paragraph.ol">
               <ol>
-                <template v-for="item in (paragraph as TExpertiseContentStringList).ol" :key="item">
-                  <li>{{ item }}</li>
+                <template v-for="item in paragraph.ol" :key="item">
+                  <li>{{ item.body.static }}</li>
                 </template>
               </ol>
             </p>
             
-            <p v-else-if="(paragraph as TExpertiseContentStringList).ul">
+            <p v-else-if="paragraph.ul">
               <ul>
-                <template v-for="item in (paragraph as TExpertiseContentStringList).ol" :key="item">
-                  <li>{{ item }}</li>
+                <template v-for="item in paragraph.ol" :key="item">
+                  <li>{{ item.body.static }}</li>
                 </template>
               </ul>
             </p>
             
-            <p v-else>{{ paragraph }}</p>
+            <p v-else>{{ paragraph.body.static }}</p>
           </template>
           
           <div
-            v-if="(item as TExpertiseContent).img"
+            v-if="item.img"
             class="expertiseContainer"
           >
-            <img :src="(item as TExpertiseContent).img" alt="" />  
+            <img :src="item.img.body.static" alt="" />  
           </div>
 
-          <ul v-if="(item as TExpertiseContent).li">
+          <ul v-if="item.li">
             <template
-              v-for="list in (item as TExpertiseContent).li"
+              v-for="list in item.li"
               :key="list"
             >
               <li>
-                <ButtonLinkInline :text="list.text" :href="list.href" />
+                <ButtonLinkInline :text="list.text.body.static" :href="list.href.body.static" />
               </li>
             </template>
           </ul>
           
           <div
-            v-if="(item as TExpertiseContent).svg"
+            v-if="item.svg"
             class="expertiseContainer"
           >
             <BackendRoadmap
-              v-if="(item as TExpertiseContent).svg ===
+              v-if="item.svg.body.static ===
             'BackendRoadmap'"
               class="roadmap"
             />
             <FrontendRoadmap 
-             v-if="(item as TExpertiseContent).svg ===
+             v-if="item.svg.body.static ===
             'FrontendRoadmap'"
               class="roadmap" 
             />
@@ -93,17 +93,17 @@
       </template>
 
       <section
-        v-if="project.details.source"
+        v-if="expertise.details.source"
         id="expertiseSection"
         class="mt-5"
       >
-        <p>{{ "Sources: " }}</p>
+        <p>{{ $t('expertise.sources') }}{{ ':' }}</p>
         <ul>
-          <template v-for="list in project.details.source" :key="item">
+          <template v-for="list in expertise.details.source" :key="item">
             <li>
               <ButtonLinkInline
-                :text="(list as TExpertiseContentLinkList).text"
-                :href="(list as TExpertiseContentLinkList).href"
+                :text="list.text.body.static"
+                :href="list.href.body.static"
               />
             </li>
           </template>
@@ -116,15 +116,9 @@
 <script setup lang="ts">
 import BackendRoadmap from "~/assets/svg/BackendRoadmap.vue";
 import FrontendRoadmap from "~/assets/svg/FrontendRoadmap.vue";
-import type {
-  TExpertiseContent,
-  TExpertiseContentLinkList,
-  TExpertiseContentStringList,
-  TProject,
-} from "~/assets/types/Card";
 import { useNavbarStore } from "~/features/Navbar/stores/navbar.store";
 
-const { project } = defineProps<TProject>();
+defineProps(["expertise"]);
 
 const navbarStore = useNavbarStore();
 

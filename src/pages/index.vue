@@ -38,6 +38,10 @@
 import Button from "~/components/Button/Button.vue";
 import { useNavbarStore } from "~/features/Navbar/stores/navbar.store";
 
+onMounted(() => {
+  document.getElementById("main")?.scrollTo(0, 0);
+});
+
 const navbarStore = useNavbarStore();
 
 const localePath = useLocalePath();
