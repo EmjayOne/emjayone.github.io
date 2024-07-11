@@ -23,21 +23,21 @@
 
       <h3 class="mt-3 mb-2">{{ $t('impressum.dsgvo.title') }}</h3>
       <ol type="I">
-        <template v-for="item in impressum.dsgvo.ol" :key="item">
-          <li class="h3 mt-1 mb-1">{{ item.romanBig.title }}</li>
+        <template v-for="item in $tm('impressum.dsgvo.ol')" :key="item">
+          <li class="h3 mt-1 mb-1">{{ $rt(item.romanBig.title) }}</li>
           <ol v-if="item.romanBig.details" type="1">
             <template v-for="(roman, idRoman) in item.romanBig.details">
-              <li class="h3 mt-1 mb-1">{{ roman.number.title }}</li>
+              <li class="h3 mt-1 mb-1">{{ $rt(roman.number.title) }}</li>
               <ol v-if="roman.number.details" type="a">
                 <template v-for="(number, idNumber) in roman.number.details">
-                  <li class="h3 mt-1 mb-1">{{ number.letterSmall.title }}</li>
+                  <li class="h3 mt-1 mb-1">{{ $rt(number.letterSmall.title) }}</li>
                   <template
                     v-for="(letter, idLetter) in number.letterSmall.content"
                     :key="letter"
                   >
                     <ul v-if="letter.ul">
                       <template v-for="liItem in letter.ul" :key="liItem">
-                        <li>{{ liItem }}</li>
+                        <li>{{ $rt(liItem) }}</li>
                       </template>
                     </ul>
                     <p
@@ -45,7 +45,7 @@
                         idRoman === 1 && idNumber === 2 && idLetter === 0
                       "
                     >
-                      {{ letter }}
+                      {{ $rt(letter) }}
                       <div class="pt-1 pb-1">
                         <p>{{ $t('impressum.hoster.name') }}</p>
                         <p>{{ $t('impressum.hoster.address') }}</p>
@@ -59,13 +59,13 @@
                         idRoman === 1 && idNumber === 2 && idLetter === 2
                       "
                     >
-                    {{ letter }}
+                    {{ $rt(letter) }}
                     <ButtonLinkInline
                       text="GitHub General Privacy Statement"
                       :href="$t('impressum.hoster.dsgvo')"
                     />
                   </p>
-                    <p v-else>{{ letter }}</p>
+                    <p v-else>{{ $rt(letter) }}</p>
                   </template>
                 </template>
               </ol>
@@ -74,17 +74,17 @@
                 :key="number"
               >
                 <p v-if="idx === 0">
-                  {{ number }} {{ $t('impressum.webmaster.name') }},
+                  {{ $rt(number) }} {{ $t('impressum.webmaster.name') }},
                   {{ $t('impressum.webmaster.address') }},
                   {{ $t('impressum.webmaster.city') }},
                   {{ $t('impressum.webmaster.country') }}
                   ({{ $t('impressum.webmaster.contact.mail') }}).
                 </p>
                 <p v-if="idx === 1">
-                  {{ number }} {{ $t('impressum.webmaster.contact.mail') }}.
+                  {{ $rt(number) }} {{ $t('impressum.webmaster.contact.mail') }}.
                 </p>
                 <p v-if="idx === 2">
-                  {{ number }} {{ $t('impressum.webmaster.address') }},
+                  {{ $rt(number) }} {{ $t('impressum.webmaster.address') }},
                   {{ $t('impressum.webmaster.city') }},
                   {{ $t('impressum.webmaster.country') }}.
                 </p>
@@ -92,16 +92,37 @@
             </template>
           </ol>
           <template v-for="roman in item.romanBig.content" :key="roman">
-            <p>{{ roman }}</p>
+            <p>{{ $rt(roman) }}</p>
           </template>
         </template>
       </ol>
+
+      <h3 class="mt-3 mb-2">{{ $t('impressum.licenses.title') }}</h3>
+      <ul>
+        <template v-for="item in $tm('impressum.licenses.content')" :key="item">
+          <li class="pb-2">
+            <span>{{ $rt(item.title) }}</span>
+            <ul>
+              <template v-for="entry in item.content" :key="entry">
+                <li class="pt-1">{{ $rt(entry.product) }}</li>
+                <ul>
+                  <li v-if="entry.author">{{ $rt(entry.author) }}</li>
+                  <li>
+                    <ButtonLinkInline :text="$rt(entry.license.title)" :href="$rt(entry.license.href)" />
+                  </li>
+                </ul>
+              </template>
+            </ul>
+          </li>
+        </template>
+      </ul>
+
     </div>
   </section>
 </template>
 
 <script setup>
-import * as impressum from "~/data/Impressum/index.json";
+import ButtonLinkInline from '~/components/Button/ButtonLinkInline.vue';
 
 onMounted(() => {
   document.getElementById("main")?.scrollTo(0, 0);
