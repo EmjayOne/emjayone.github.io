@@ -27,7 +27,7 @@
   "projects": {
     "title": "My Projects",
     "visitProjectWebsite": "Visit project website",
-    "projects": [
+    "content": [
       {
         "id": "se-psd04",
         "title": "Siemens Energy PSD04",
@@ -113,7 +113,7 @@
     "title": "My Expertise",
     "summary": "Summary",
     "sources": "Sources",
-    "expertise": [
+    "content": [
       {
         "id": "accessibility",
         "title": "Accessibility",

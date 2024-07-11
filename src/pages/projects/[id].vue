@@ -9,13 +9,13 @@ onMounted(() => {
   document.getElementById("main")?.scrollTo(0, 0);
 });
 
-const { tm } = useI18n();
+const { tm, rt } = useI18n();
 const { id } = useRoute().params;
 
 const project = ref();
-const projects = computed(() => tm("projects.projects") as any);
+const projects = computed(() => tm("projects.content") as any);
 
-project.value = projects.value.find((item: any) => item.id.loc.source === id);
+project.value = projects.value.find((item: any) => rt(item.id) === id);
 
 if (!project.value)
   throw createError({ statusCode: 404, statusMessage: "Project not found." });

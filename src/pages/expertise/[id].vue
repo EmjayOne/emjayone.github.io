@@ -9,15 +9,13 @@ onMounted(() => {
   document.getElementById("main")?.scrollTo(0, 0);
 });
 
-const { tm } = useI18n();
+const { tm, rt } = useI18n();
 const { id } = useRoute().params;
 
 const expertise = ref();
-const expertises = computed(() => tm("expertise.expertise") as any);
+const expertises = computed(() => tm("expertise.content") as any);
 
-expertise.value = expertises.value.find(
-  (item: any) => item.id.loc.source === id
-);
+expertise.value = expertises.value.find((item: any) => rt(item.id) === id);
 
 if (!expertise.value)
   throw createError({ statusCode: 404, statusMessage: "Expertise not found." });

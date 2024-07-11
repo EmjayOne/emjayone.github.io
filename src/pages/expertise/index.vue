@@ -20,14 +20,14 @@ onMounted(() => {
   document.getElementById("main")?.scrollTo(0, 0);
 });
 
-const { locale, tm } = useI18n();
+const { locale, tm, rt } = useI18n();
 
-const expertise = computed(() => tm("expertise.expertise") as any);
+const expertise = computed(() => tm("expertise.content") as any);
 
 const sortExpertises = () => {
   expertise.value.sort((a: any, b: any) => {
-    const titleA = (a.title.loc.source as string).toUpperCase();
-    const titleB = (b.title.loc.source as string).toUpperCase();
+    const titleA = rt(a.title).toUpperCase();
+    const titleB = rt(b.title).toUpperCase();
 
     if (titleA < titleB) return -1;
     if (titleA > titleB) return 1;

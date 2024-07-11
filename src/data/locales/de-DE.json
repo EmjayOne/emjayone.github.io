@@ -27,7 +27,7 @@
   "projects": {
     "title": "Meine Projekte",
     "visitProjectWebsite": "Projekt-Website besuchen",
-    "projects": [
+    "content": [
       {
         "id": "se-psd04",
         "title": "Siemens Energy PSD04",
@@ -113,7 +113,7 @@
     "title": "Meine Kompetenzen",
     "summary": "Zusammenfassung",
     "sources": "Quellen",
-    "expertise": [
+    "content": [
       {
         "id": "accessibility",
         "title": "Barriere\u00ADfreiheit",

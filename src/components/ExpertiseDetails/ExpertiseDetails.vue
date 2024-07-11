@@ -4,20 +4,20 @@
       <NuxtLink :to="localePath('/expertise')" @click="navbarStore.setMobileNavToFalse">
         <span class="text-highlight-primary return"> arrow_back </span>
       </NuxtLink>
-      <h2 class="text-highlight-primary mb-3 pt-3">{{ expertise.title.loc.source }}</h2>
+      <h2 class="text-highlight-primary mb-3 pt-3">{{ $rt(expertise.title) }}</h2>
       <template v-for="item in expertise.details.content" :key="item">
         <section id="expertiseSection">
           <h4 v-if="item.title">
-            {{ item.title.loc.source }}
+            {{ $rt(item.title) }}
           </h4>
           
           <div v-if="item.summary" class="summary">
             <p>{{ $t('expertise.summary') }}</p>
-            <span>{{ item.summary.loc.source }}</span>
+            <span>{{ $rt(item.summary) }}</span>
           </div class="summary">
 
           <h5 v-if="item.subtitle">
-            {{ item.subtitle.loc.source }}
+            {{ $rt(item.subtitle) }}
           </h5>
           
           <div
@@ -27,10 +27,10 @@
             <iframe
               width="560"
               height="315"
-              :src="item.video.loc.source"
+              :src="$rt(item.video)"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
@@ -40,7 +40,7 @@
             <p v-if="paragraph.ol">
               <ol>
                 <template v-for="item in paragraph.ol" :key="item">
-                  <li>{{ item.loc.source }}</li>
+                  <li>{{ $rt(item) }}</li>
                 </template>
               </ol>
             </p>
@@ -48,19 +48,19 @@
             <p v-else-if="paragraph.ul">
               <ul>
                 <template v-for="item in paragraph.ol" :key="item">
-                  <li>{{ item.loc.source }}</li>
+                  <li>{{ $rt(item) }}</li>
                 </template>
               </ul>
             </p>
             
-            <p v-else>{{ paragraph.loc.source }}</p>
+            <p v-else>{{ $rt(paragraph) }}</p>
           </template>
           
           <div
             v-if="item.img"
             class="expertiseContainer"
           >
-            <img :src="item.img.loc.source" alt="" />  
+            <img :src="$rt(item.img)" alt="" />  
           </div>
 
           <ul v-if="item.li">
@@ -69,7 +69,7 @@
               :key="list"
             >
               <li>
-                <ButtonLinkInline :text="list.text.loc.source" :href="list.href.loc.source" />
+                <ButtonLinkInline :text="$rt(list.text)" :href="$rt(list.href)" />
               </li>
             </template>
           </ul>
@@ -79,12 +79,12 @@
             class="expertiseContainer"
           >
             <BackendRoadmap
-              v-if="item.svg.loc.source ===
+              v-if="$rt(item.svg) ===
             'BackendRoadmap'"
               class="roadmap"
             />
             <FrontendRoadmap 
-             v-if="item.svg.loc.source ===
+             v-if="$rt(item.svg) ===
             'FrontendRoadmap'"
               class="roadmap" 
             />
@@ -102,8 +102,8 @@
           <template v-for="list in expertise.details.source" :key="item">
             <li>
               <ButtonLinkInline
-                :text="list.text.loc.source"
-                :href="list.href.loc.source"
+                :text="$rt(list.text)"
+                :href="$rt(list.href)"
               />
             </li>
           </template>

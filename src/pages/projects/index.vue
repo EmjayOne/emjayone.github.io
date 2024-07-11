@@ -3,7 +3,7 @@
     <div class="container">
       <h2 class="text-highlight-primary mb-2">{{ $t("projects.title") }}</h2>
       <div class="row gap-2">
-        <template v-for="item in projects" :key="item">
+        <template v-for="item in $tm('projects.content')" :key="item">
           <div class="col-12-xxs col-6-md col-3-lg">
             <Card :project="item" href="projects" />
           </div>
@@ -17,8 +17,4 @@
 onMounted(() => {
   document.getElementById("main")?.scrollTo(0, 0);
 });
-
-const { tm } = useI18n();
-
-const projects = computed(() => tm("projects.projects") as any);
 </script>
