@@ -8,19 +8,19 @@
         <span class="text-highlight-primary return"> arrow_back </span>
       </NuxtLink>
       <h2 class="text-highlight-primary mb-3 pt-3">
-        {{ project.title.body.static }}
+        {{ project.title.loc.source }}
       </h2>
       <template v-for="desc in project.details.desc" :key="desc">
-        <p class="mb-3">{{ desc.body.static }}</p>
+        <p class="mb-3">{{ desc.loc.source }}</p>
       </template>
       <ul v-for="task in project.details.task" :key="task">
-        <li class="mb-1">{{ task.body.static }}</li>
+        <li class="mb-1">{{ task.loc.source }}</li>
       </ul>
       <ButtonLink
         class="externalLink mt-4"
         v-if="project.details.link"
         :text="$t('projects.visitProjectWebsite')"
-        :href="project.details.link.body.static"
+        :href="project.details.link.loc.source"
       />
     </div>
   </section>

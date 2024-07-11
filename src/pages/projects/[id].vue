@@ -15,7 +15,7 @@ const { id } = useRoute().params;
 const project = ref();
 const projects = computed(() => tm("projects.projects") as any);
 
-project.value = projects.value.find((item: any) => item.id.body.static === id);
+project.value = projects.value.find((item: any) => item.id.loc.source === id);
 
 if (!project.value)
   throw createError({ statusCode: 404, statusMessage: "Project not found." });

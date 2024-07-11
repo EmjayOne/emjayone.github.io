@@ -16,7 +16,7 @@ const expertise = ref();
 const expertises = computed(() => tm("expertise.expertise") as any);
 
 expertise.value = expertises.value.find(
-  (item: any) => item.id.body.static === id
+  (item: any) => item.id.loc.source === id
 );
 
 if (!expertise.value)

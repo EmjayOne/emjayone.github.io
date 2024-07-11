@@ -26,8 +26,8 @@ const expertise = computed(() => tm("expertise.expertise") as any);
 
 const sortExpertises = () => {
   expertise.value.sort((a: any, b: any) => {
-    const titleA = (a.title.body.static as string).toUpperCase();
-    const titleB = (b.title.body.static as string).toUpperCase();
+    const titleA = (a.title.loc.source as string).toUpperCase();
+    const titleB = (b.title.loc.source as string).toUpperCase();
 
     if (titleA < titleB) return -1;
     if (titleA > titleB) return 1;

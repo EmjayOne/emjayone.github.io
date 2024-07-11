@@ -1,14 +1,14 @@
 <template>
   <NuxtLink
-    :to="localePath(`/${props.href}/${props.project.id.body.static}`)"
+    :to="localePath(`/${props.href}/${props.project.id.loc.source}`)"
     id="card"
   >
     <div class="card-container">
-      <h1>{{ props.project.title.body.static }}</h1>
-      <div class="card-date">{{ props.project.date.body.static }}</div>
+      <h1>{{ props.project.title.loc.source }}</h1>
+      <div class="card-date">{{ props.project.date.loc.source }}</div>
       <div class="card-tags">
         <template v-for="tag in props.project.tags" :key="tag">
-          <div class="card-tag">{{ tag.body.static }}</div>
+          <div class="card-tag">{{ tag.loc.source }}</div>
         </template>
       </div>
     </div>
