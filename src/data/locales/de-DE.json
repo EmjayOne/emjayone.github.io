@@ -106,6 +106,23 @@
           ],
           "link": "https://absolut-projekt.de/"
         }
+      },
+      {
+        "id": "emjayone",
+        "title": "EMJAYONE",
+        "date": "07/2024",
+        "tags": ["Private"],
+        "details": {
+          "desc": [
+            "Eins meiner privaten Projekte ist diese Website.",
+            "Diese Website wurde mit Vue.js und Nuxt erstellt. Als Programmiersprache habe ich TypeScript verwendet. Ich habe bereits Lokalisierungsunterstützung für Englisch und Deutsch sowie ein responsives Design für mobile Benutzer implementiert. Ich habe auch damit begonnen, bewährte Praktiken für die Barrierefreiheit einzubinden.",
+            "Weitere Ideen für die kurzfristige Implementierung sind:"
+          ],
+          "task": [
+            "die Barrierefreiheit verbessern",
+            "mehr von meinen privaten Projekten vorstellen"
+          ]
+        }
       }
     ]
   },

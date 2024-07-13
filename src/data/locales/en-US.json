@@ -106,6 +106,23 @@
           ],
           "link": "https://absolut-projekt.de/"
         }
+      },
+      {
+        "id": "emjayone",
+        "title": "EMJAYONE",
+        "date": "07/2024",
+        "tags": ["Private"],
+        "details": {
+          "desc": [
+            "One of my private projects is this website.",
+            "This website is custom made with Vue.js and Nuxt. I used TypeScript as the programming language. I already implemented localization support for English and German as well as a responsive design for mobile users. I have also started to include accessibility best practices.",
+            "Further ideas for short-term implementation include:"
+          ],
+          "task": [
+            "improve accessibility",
+            "show case more of my private projects"
+          ]
+        }
       }
     ]
   },
