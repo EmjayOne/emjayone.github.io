@@ -40,11 +40,12 @@
           ],
           "task": [
             "Implementierung eines kundenspezifischen Frontends mit TypeScript auf der Basis von Vue.js / Pinia",
+            "Umsetzung moderner UI- und UX Designaspekte",
             "Implementierung eines kundenspezifischen Backends mit Python3 auf der Basis von Flask",
             "Implementierung einer kundenspezifischen REST API",
             "Erstellung von Dokumentationen und Analysen",
             "Planung und Organisation von Aufgaben für das Frontend/Backend-Team",
-            "kontinuierliche Abstimmung mit anderen Teams und externen Partnern"
+            "regelmäßige Abstimmung mit anderen Teams und externen Partnern"
           ],
           "link": "https://www.siemens-energy.com/global/en/home/products-services/product/accessories.html"
         }
@@ -60,11 +61,11 @@
             "Zu meinen Aufgaben gehörten:"
           ],
           "task": [
-            "Anbindung von IoT-Sensoren über lokale Netzwerkserver an zentrale Anwendungsserver",
             "Implementierung von lokalen Netzwerkservern zur Verwaltung verschiedener LoRaWAN Endknoten und Gateways mit ChirpStack",
-            "Integration der Informationsübertragung vom lokalen Netzwerkserver zum Applikationsserver über HTTP, MQTT, OPC UA mit bcUA RTS, OpenDDS und RTI DDS",
+            "Integration der Informationsübertragung vom IoT-Sensor zum Applikationsserver über LoRaWAN, HTTP, MQTT, OPC UA mit bcUA RTS, OpenDDS und RTI DDS",
             "Konfiguration und Administration des zentralen Applikationsservers",
             "Automatisierung der Server- und Netzwerkkonfigurationen mittels Ansible",
+            "Erstellung von Dokumentationen und Analysen",
             "Kontinuierliche Abstimmung mit anderen Projektpartnern"
           ],
           "link": "http://www.bau-smart-talk.com/"
@@ -84,8 +85,7 @@
           "task": [
             "Implementierung eines individuellen Frontends mit TypeScript auf der Basis von React",
             "Implementierung eines individuellen Backends mit Python3 auf der Basis von Django",
-            "Erstellung von Dokumentationen und Analysen",
-            "Aufgabenplanung"
+            "Erstellung von Dokumentationen und Analysen"
           ],
           "link": "https://www.bitctrl.de/de/industrieautomation/opc-ua/opc-ua-in-der-cloud-bcua-pes.html"
         }

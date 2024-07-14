@@ -40,11 +40,12 @@
           ],
           "task": [
             "implementation of custom built frontend with TypeScript based on Vue.js / Pinia",
+            "implementation of modern UI and UX design aspects",
             "implementation of custom built backend with Python3 based on Flask",
             "implementation of custom built REST API",
             "production of documentation and analyses",
             "planning and organization of tasks for the frontend/backend team",
-            "continuous coordination with other teams and external partners"
+            "regular coordination with other teams and external partners"
           ],
           "link": "https://www.siemens-energy.com/global/en/home/products-services/product/accessories.html"
         }
@@ -60,11 +61,11 @@
             "My responsibilities included:"
           ],
           "task": [
-            "connection of IoT sensors via local network server to central application server",
             "implementation of local network servers to manage various LoRaWAN end nodes and gateways using ChirpStack",
-            "integration of information transfer from the local network server to the application server via HTTP, MQTT, OPC UA with bcUA RTS, OpenDDS and RTI DDS",
+            "integration of information transfer from the IoT sensor to the application server via LoRaWAN, HTTP, MQTT, OPC UA with bcUA RTS, OpenDDS and RTI DDS",
             "configuration and administration of the central application server",
             "automation of the server and network configurations using Ansible",
+            "production of documentation and analyses",
             "continuous coordination with other project partners"
           ],
           "link": "http://www.bau-smart-talk.com/"
@@ -84,8 +85,7 @@
           "task": [
             "implementation of custom built frontend with TypeScript based on React",
             "implementation of custom built backend with Python3 based on Django",
-            "production of documentation and analyses",
-            "planning of tasks"
+            "production of documentation and analyses"
           ],
           "link": "https://www.bitctrl.de/de/industrieautomation/opc-ua/opc-ua-in-der-cloud-bcua-pes.html"
         }
