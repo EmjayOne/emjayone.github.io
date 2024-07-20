@@ -53,7 +53,7 @@
       {
         "id": "bst",
         "title": "BauSmartTalk",
-        "date": "09/2022",
+        "date": "10/2022",
         "tags": ["Business", "BitCtrl"],
         "details": {
           "desc": [
@@ -74,7 +74,7 @@
       {
         "id": "bcua-pes",
         "title": "bitcontrol\u00AE Unified Architecture PES",
-        "date": "01/2022",
+        "date": "09/2022",
         "tags": ["Business", "BitCtrl"],
         "details": {
           "desc": [
@@ -122,6 +122,60 @@
             "die Barrierefreiheit verbessern",
             "mehr von meinen privaten Projekten und Kompetenzen vorstellen"
           ]
+        }
+      },
+      {
+        "id": "alternative-campus-dual",
+        "title": "Alternative Campus Dual",
+        "date": "12/2021",
+        "tags": ["Private"],
+        "details": {
+          "desc": [
+            "Während meines Studiums bin ich mit der Studenten-Verwaltungssoftware Campus Dual in Berührung gekommen. Meine Erfahrungen mit der Software waren durchwachsen. Die Nutzerschnittstelle wirkte veraltet und die Website war langsam. Modernes Design oder Beachtung von User Experience Aspekten suchte man vergeblich. Darüber hinaus waren den Administratoren Bugs und andere Unzulänglichkeiten des Service bekannt, die resignierend hingenommen wurden. Vor allem im Rahmen von coronabedingtem Homeschooling offenbarte die Anwendung massive Schwachstellen.",
+            "Diese Unzulänglichkeiten hatten mein Kommilitone Max Hohlfeld und ich zum Anlass genommen, um im Rahmen eines anzufertigenden Softwareprojekts eine Alternative zum bestehenden Campus Dual zu entwickeln. Unser Ansatz bestand darin die bekannten Probleme der Campus Dual Software zu lösen und die neue Anwendung durch geeignete Schnittstellen zu erweitern.",
+            "Screenshot der Anwendung:",
+            {
+              "img": "AlternativeCampusDual"
+            },
+            "Diese erste Version der Software haben wir mit Python3 unter Verwendung des Django Frameworks erstellt. Spezielle Frontendimplementierungen, bei denen das Django Template nicht ausreichend war, wurden individuell mit HTML, CSS und JavaScript umgesetzt. Zur Persistierung wurde eine Datenbank mit MariaDB verwendet.",
+            "In dieser Version enthaltene Features:"
+          ],
+          "task": [
+            "Benutzer-, Rechte- und Rollenverwaltung für Administratoren, Organisatoren, Dozenten und Studenten",
+            "Prüfungsverwaltung (Prüfungserstellung, Teilnahmeverwaltung, Abgabe von Prüfungsleistungen)",
+            "Stundenplan für Dozenten und Studenten",
+            "Vorlesungsverwaltung und Raumplanung",
+            "Automatisierte Benachrichtigungen per Email über Termine und Fristen",
+            "Dokumentenverwaltung zur digitalisierten Bereitstellung von Immatrikulations- und Notenbescheinigungen oder BAföG-Dokumenten",
+            "Dateiserver-Integration mittels serverseitigem VPN für den webbasierten Zugriff auf Vorlesungsmaterialien",
+            "Integration der von der Hochschule genutzten Lernplattform OPAL",
+            "modernisierter, responsiver und performanter Webauftritt"
+          ]
+        }
+      },
+      {
+        "id": "ba-chain",
+        "title": "BA Chain",
+        "date": "05/2022",
+        "tags": ["Private"],
+        "details": {
+          "desc": [
+            "Während meines Studiums galt es eine Beispielanwendung für verteiltes Rechnen anzufertigen. Der damals populärste Anwendungsfall fand sich in Kryptowährungen.",
+            "Mein Kommilitone Max Hohlfeld und ich hatten uns daher dazu entschlossen eine einfache Blockchain nach dem Vorbild von Bitcoin zu entwickeln. Neue Blöcke werden dabei durch das Proof of Work Verfahren validiert. Wir haben dabei besonders darauf geachtet, dass das Proof of Work Verfahren und der Aufbau der einzelnen Blöcke ohne Vereinfachungen umgesetzt wurde.",
+            "Der Miningprozess beginnt dabei mit der Generierung zufälliger Transaktionen. Diese werden zu einem Block zusammengefügt. Dieser Block wird mit seiner Schwierigkeit an die Clients gesendet. Die Clients suchen dann die Nonce mit der die Schwierigkeit zu erfüllen ist. Eine gefundene Nonce wird an das Backend übermittelt. Das Backend unserer Anwendung verifiziert den Hash der erhaltenden Nonce. Ist dieser korrekt, wird der Block gespeichert und die Prozedur beginnt von vorn.",
+            "Wir haben bei dieser Anwendung mit verschiedenen Technologien experimentiert. Im Backend kam Python3 unter Verwendung des Frameworks Django zum Einsatz. Im Frontend haben wir WebAssembly verwendet. Die Implementierung der klassischen Webansicht erfolgte dabei über das Django integrierte HTML, Bulma (als CSS Bibliothek) und JavaScript. Letzteres wurde dabei nur benötigt, um WebAssembly aufzurufen. Die Client-Server-Kommunikation wurde über WebSockets gelöst. Für die Implementierung der WebSockets und der Nonce-Suche haben wir Rust verwendet.",
+            "Screenshots der Anwendung:",
+            {
+              "img": "BAChainOverview"
+            },
+            {
+              "img": "BAChainBlock"
+            },
+            {
+              "img": "BAChainMine"
+            }
+          ],
+          "task": []
         }
       }
     ]

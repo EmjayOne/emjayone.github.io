@@ -11,7 +11,33 @@
         {{ $rt(project.title) }}
       </h2>
       <template v-for="desc in project.details.desc" :key="desc">
-        <p class="mb-3">{{ $rt(desc) }}</p>
+        <template v-if="desc.img">
+          <img
+            v-if="$rt(desc.img) === 'AlternativeCampusDual'"
+            src="~/assets/svg/AlternativeCampusDual.png"
+            alt="Alternative Campus Dual Screenshot"
+            class="mb-3"
+          />
+          <img
+            v-if="$rt(desc.img) === 'BAChainOverview'"
+            src="~/assets/svg/BAChainOverview.png"
+            alt="BA Chain Overview Screenshot"
+            class="mb-3"
+          />
+          <img
+            v-if="$rt(desc.img) === 'BAChainBlock'"
+            src="~/assets/svg/BAChainBlock.png"
+            alt="BA Chain Block Screenshot"
+            class="mb-3"
+          />
+          <img
+            v-if="$rt(desc.img) === 'BAChainMine'"
+            src="~/assets/svg/BAChainMine.png"
+            alt="BA Chain Mine Screenshot"
+            class="mb-3"
+          />
+        </template>
+        <p v-else class="mb-3">{{ $rt(desc) }}</p>
       </template>
       <ul v-for="task in project.details.task" :key="task">
         <li class="mb-1">{{ $rt(task) }}</li>

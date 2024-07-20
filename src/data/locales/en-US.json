@@ -53,7 +53,7 @@
       {
         "id": "bst",
         "title": "BauSmartTalk",
-        "date": "09/2022",
+        "date": "10/2022",
         "tags": ["Business", "BitCtrl"],
         "details": {
           "desc": [
@@ -74,7 +74,7 @@
       {
         "id": "bcua-pes",
         "title": "bitcontrol\u00AE Unified Architecture PES",
-        "date": "01/2022",
+        "date": "09/2022",
         "tags": ["Business", "BitCtrl"],
         "details": {
           "desc": [
@@ -123,6 +123,59 @@
             "show case more of my private projects and expertises",
             ""
           ]
+        }
+      },
+      {
+        "id": "alternative-campus-dual",
+        "title": "Alternative Campus Dual",
+        "date": "12/2021",
+        "tags": ["Private"],
+        "details": {
+          "desc": [
+            "During my studies, I came into contact with the student administration software Campus Dual. My experience with the software was mixed. The user interface seemed outdated and the website was slow. There was no modern design or attention to user experience aspects. In addition, the administrators were aware of bugs and other shortcomings of the service, which were resignedly accepted. The application revealed massive weaknesses, especially in the context of corona-related homeschooling.",
+            "My fellow student Max Hohlfeld and I took these shortcomings as an opportunity to develop an alternative to the existing Campus Dual as part of a software project. Our approach was to solve the known problems of the Campus Dual software and to extend the new application with suitable interfaces.",
+            "Screenshot of the application:",
+            {
+              "img": "AlternativeCampusDual"
+            },
+            "We created this first version of the software with Python3 using the Django framework. Special frontend implementations, where the Django template was not sufficient, were implemented individually with HTML, CSS and JavaScript. A database with MariaDB was used for persistence.",
+            "Features included in this version:"
+          ],
+          "task": [
+            "User, rights and role management for administrators, organizers, lecturers and students",
+            "Exam administration (exam creation, participation management, submission of papers)",
+            "Timetable for lecturers and students",
+            "Lecture management and room planning",
+            "Automated notifications by email about dates and deadlines",
+            "Document management for the digitalized provision of enrolment and grade certificates or BAföG documents",
+            "File server integration via server-side VPN for web-based access to lecture materials",
+            "modernized, responsive and high-performance website"
+          ]
+        }
+      },
+      {
+        "id": "ba-chain",
+        "title": "BA Chain",
+        "date": "05/2022",
+        "tags": ["Private"],
+        "details": {
+          "desc": [
+            "During my studies, I had to create a sample application for distributed computing. The most popular use case at the time was cryptocurrencies.",
+            "My fellow student Max Hohlfeld and I therefore decided to develop a simple blockchain based on the Bitcoin model. New blocks are validated using the proof of work method. We paid particular attention to ensuring that the proof of work process and the structure of the individual blocks were implemented without simplifications.",
+            "The mining process begins with the generation of random transactions. These are combined to form a block. This block is sent to the clients with its difficulty. The clients then search for the nonce with which the difficulty is to be fulfilled. Any nonce found is sent to the backend. The backend of our application verifies the hash of the nonce received. If this is correct, the block is saved and the procedure starts again.",
+            "We experimented with different technologies for this application. Python3 was used in the backend using the Django framework. We used WebAssembly in the frontend. The classic web view was implemented using the Django integrated HTML, Bulma (as a CSS library) and JavaScript. The latter was only needed to call WebAssembly. The client-server communication was realized via WebSockets. We used Rust to implement the WebSockets and the nonce search.",
+            "Screenshots of the application:",
+            {
+              "img": "BAChainOverview"
+            },
+            {
+              "img": "BAChainBlock"
+            },
+            {
+              "img": "BAChainMine"
+            }
+          ],
+          "task": []
         }
       }
     ]
